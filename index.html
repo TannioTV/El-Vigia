@@ -377,19 +377,25 @@ function patch(id,data){
   try{localStorage.setItem(LS,JSON.stringify(estadoLocal));}catch(e){}
 }
 function banner(m){const b=$("#banner"); b.hidden=!m; b.textContent=m||"";}
-function open(id){
+try{history.scrollRestoration="manual";}catch(e){}
+function open(id,desdeHistorial){
   const n=noticias.find(x=>x.id===id); if(!n) return;
+  if(!desdeHistorial){
+    try{
+      if(!openId) history.replaceState({vista:"portada",section,scroll:window.scrollY},"",location.pathname+location.search);
+      history.pushState({vista:"nota",id,section},"","#"+encodeURIComponent(id));
+    }catch(e){}
+  }
   openId=id; disposeCharts(); render(); window.scrollTo({top:0});
-  try{history.replaceState(null,"","#"+encodeURIComponent(id));}catch(e){}
   document.title=n.titular+" · El Vigía";
   if(!n.leida){n.leida=true; patch(id,{leida:true});}
 }
 document.addEventListener("click",e=>{
   const o=e.target.closest("[data-open]"); if(o&&!e.target.closest("a")){open(o.dataset.open);return;}
   const s=e.target.closest("[data-sec]"); if(s){section=s.dataset.sec;openId=null;clearHash();disposeCharts();render();return;}
-  if(e.target.closest("[data-back]")){openId=null;clearHash();disposeCharts();render();return;}
+  if(e.target.closest("[data-back]")){ if(history.state&&history.state.vista==="nota"){history.back();} else {cerrarNota(0);} return;}
   const sv=e.target.closest("[data-save]"); if(sv){const n=noticias.find(x=>x.id===sv.dataset.save); if(n){n.guardada=!n.guardada; sv.setAttribute("aria-pressed",String(n.guardada)); sv.textContent=n.guardada?"Guardada":"Guardar"; patch(n.id,{guardada:n.guardada});} return;}
-  const un=e.target.closest("[data-unread]"); if(un){const n=noticias.find(x=>x.id===un.dataset.unread); if(n){n.leida=false; patch(n.id,{leida:false}); openId=null; clearHash(); disposeCharts(); render();} return;}
+  const un=e.target.closest("[data-unread]"); if(un){const n=noticias.find(x=>x.id===un.dataset.unread); if(n){n.leida=false; patch(n.id,{leida:false}); if(history.state&&history.state.vista==="nota"){history.back();} else {cerrarNota(0);}} return;}
 });
 document.addEventListener("keydown",e=>{const o=e.target.closest&&e.target.closest("[data-open]"); if(o&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(o.dataset.open);}});
 let qt; $("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{query=e.target.value.trim();if(openId){openId=null;}disposeCharts();render();},200);});
@@ -397,7 +403,15 @@ $("#only-unread").addEventListener("change",e=>{onlyUnread=e.target.checked;disp
 new MutationObserver(()=>{document.querySelectorAll("[data-open]:not([tabindex])").forEach(el=>{if(el.tagName!=="BUTTON"){el.setAttribute("tabindex","0");el.setAttribute("role","link");}});}).observe($("#view"),{childList:true,subtree:true});
 
 function clearHash(){try{history.replaceState(null,"",location.pathname+location.search);}catch(e){} document.title="El Vigía";}
-window.addEventListener("hashchange",()=>{const id=decodeURIComponent(location.hash.slice(1)); if(id&&noticias.some(n=>n.id===id)&&id!==openId) open(id);});
+function cerrarNota(scroll){openId=null; clearHash(); disposeCharts(); render(); window.scrollTo({top:scroll||0});}
+window.addEventListener("popstate",e=>{
+  const st=e.state||{};
+  const id=decodeURIComponent(location.hash.slice(1));
+  if(id&&noticias.some(n=>n.id===id)){ if(st.section) section=st.section; open(id,true); return; }
+  if(st.section) section=st.section;
+  openId=null; document.title="El Vigía"; disposeCharts(); render();
+  const y=st.scroll||0; requestAnimationFrame(()=>window.scrollTo({top:y}));
+});
 
 /* ---------- boot ---------- */
 render();
@@ -414,7 +428,7 @@ async function cargar(primera){
     firma=nuevaFirma;
     noticias=Array.isArray(n)?n:[]; ediciones=Array.isArray(e)?e:[];
     aplicarLocal();
-    if(primera){const id=decodeURIComponent(location.hash.slice(1)); if(id&&noticias.some(x=>x.id===id)){open(id);return;}}
+    if(primera){const id=decodeURIComponent(location.hash.slice(1)); if(id&&noticias.some(x=>x.id===id)){try{history.replaceState({vista:"portada",section,scroll:0},"",location.pathname+location.search);}catch(e){} open(id);return;}}
     if(!(openId && document.activeElement && document.activeElement.closest(".article"))){disposeCharts();render();}
   }catch(err){
     loaded=true;
