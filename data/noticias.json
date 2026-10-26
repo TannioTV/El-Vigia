@@ -1,5 +1,105 @@
 [
  {
+  "id": "n20261026-2215-salvador-haiti",
+  "edicion_id": "e20261026-2215",
+  "fecha": "2026-10-26T16:00:00Z",
+  "tema": "El Salvador y Haití",
+  "tema_id": "salvador-haiti",
+  "hilo": "salvador-haiti-soldados",
+  "titular": "El Salvador manda fuerzas especiales a Haití para buscar a cuatro militares desaparecidos; Bukele rechaza que los restos hallados sean de ellos",
+  "bajada": "Los cuatro integrantes de la Fuerza de Supresión de Pandillas desaparecieron el 18 de octubre tras una emboscada cerca de Croix-des-Bouquets; no es un conflicto entre países, sino de El Salvador contra las bandas haitianas.",
+  "cuerpo": [
+   "El enfrentamiento no es entre los gobiernos de El Salvador y Haití, que cooperan, sino entre El Salvador y las pandillas haitianas. Todo empezó el domingo 18 de octubre, cuando cuatro técnicos de la Fuerza Aérea salvadoreña que sirven en la Fuerza de Supresión de Pandillas (GSF), la misión multinacional autorizada por la ONU, entraron por error a una zona controlada por bandas en Santo, cerca de Croix-des-Bouquets, al noreste de Puerto Príncipe. Según la cronología de El Mundo, regresaban de comprar comida guiándose con Google Maps. Su vehículo blindado fue atacado con disparos y explosivos y terminó incendiado; desde entonces no se sabe nada de ellos. Fue el primer ataque grave contra la GSF.",
+   "El 21 de octubre el presidente Nayib Bukele anunció una operación de rescate y dio un ultimátum a los jefes de las bandas para que entregaran con vida a los cuatro militares, amenazando con una ofensiva mayor. Al día siguiente llegó a Puerto Príncipe un primer contingente de unos 100 soldados de fuerzas especiales; el periódico haitiano Le Nouvelliste habla de hasta 450 efectivos trasladados en aviones de EE.UU., cifra que El Salvador no ha confirmado. La policía haitiana y la GSF lanzaron operativos en la llanura de Cul-de-Sac con apoyo aéreo, con varios presuntos pandilleros muertos y cuatro efectivos internacionales heridos.",
+   "El 24 de octubre The New York Times informó que se habían encontrado cuerpos que podrían ser de los militares, pero horas después Bukele lo negó: dijo que los cuatro cuerpos entregados por una ONG incluían a un niño, a un hombre mucho más alto que sus soldados y a un militar de otro país (mostró un carné de Chad). La GSF reconoció haber recibido restos, pero no pudo confirmar a quién pertenecen.",
+   "El 26 de octubre Wilson Joseph, alias Lanmò San Jou, líder de la banda 400 Mawozo, difundió un video en el que sugiere, sin pruebas, que los salvadoreños murieron en un tiroteo en territorio de la banda Chen Mechan y se desliga del ataque; un experto de la ONU atribuye la emboscada a Chen Mechan con apoyo de 400 Mawozo. El Salvador no ha confirmado ninguna muerte, la GSF dice que mantendrá la presión sobre las bandas y la OEA pidió medidas más firmes. República Dominicana, por su parte, reforzó su frontera con Haití.",
+   "Analistas del International Crisis Group advierten que encontrar a los militares será muy difícil si las bandas no los entregan, y que la operación podría escalar la violencia. La GSF opera muy por debajo de su tamaño autorizado por la ONU. El Vigía dará seguimiento diario a esta historia durante las próximas dos semanas."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 18.5763,
+   "lon": -72.2257,
+   "nombre": "Croix-des-Bouquets, Haití",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Militares desaparecidos",
+    "valor": "4 (desde el 18 oct)"
+   },
+   {
+    "etiqueta": "Primer contingente enviado",
+    "valor": "~100 fuerzas especiales"
+   },
+   {
+    "etiqueta": "Despliegue reportado (sin confirmar)",
+    "valor": "Hasta 450 efectivos"
+   },
+   {
+    "etiqueta": "Bandas señaladas",
+    "valor": "Chen Mechan y 400 Mawozo"
+   }
+  ],
+  "cronologia": [
+   {
+    "evento": "Emboscada contra el blindado de cuatro técnicos salvadoreños de la GSF en Santo, cerca de Croix-des-Bouquets; se pierde contacto con ellos.",
+    "hora": "18 oct"
+   },
+   {
+    "evento": "La Fuerza Aérea salvadoreña confirma que son de su contingente; EE.UU. promete apoyo para su regreso.",
+    "hora": "19 oct"
+   },
+   {
+    "evento": "Bukele anuncia operación de rescate y da un ultimátum a las bandas; policía haitiana y GSF lanzan operativos en Cul-de-Sac.",
+    "hora": "21 oct"
+   },
+   {
+    "evento": "Llegan a Puerto Príncipe unos 100 soldados de fuerzas especiales salvadoreñas.",
+    "hora": "22 oct"
+   },
+   {
+    "evento": "The New York Times reporta hallazgo de cuerpos; Bukele lo desmiente horas después. Le Nouvelliste habla de hasta 450 efectivos.",
+    "hora": "24 oct"
+   },
+   {
+    "evento": "La GSF confirma que recibió restos humanos, sin poder identificarlos. R. Dominicana refuerza su frontera.",
+    "hora": "25 oct"
+   },
+   {
+    "evento": "El líder de 400 Mawozo sugiere sin pruebas que murieron en zona de Chen Mechan; la OEA pide medidas más firmes; la GSF dice que seguirá la ofensiva.",
+    "hora": "26 oct"
+   }
+  ],
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "El Mundo (El Salvador): línea de tiempo",
+    "url": "https://diario.elmundo.sv/nacionales/haiti-pandillas-y-una-mision-militar-de-rescate-la-linea-de-tiempo-tras-la-emboscada-de-soldados-salvadorenos"
+   },
+   {
+    "nombre": "Infobae / EFE: alcance de la campaña militar",
+    "url": "https://www.infobae.com/america/agencias/2026/10/24/el-alcance-de-la-campana-militar-de-el-salvador-una-incognita-en-la-crisis-haitiana/"
+   },
+   {
+    "nombre": "Infobae / EFE: Bukele descarta que los restos sean de sus soldados",
+    "url": "https://www.infobae.com/america/agencias/2026/10/25/bukele-descarta-que-los-cuatro-cuerpos-hallados-en-haiti-sean-de-los-soldados-salvadorenos-secuestrados/"
+   },
+   {
+    "nombre": "Reuters (vía Investing.com)",
+    "url": "https://www.investing.com/news/commodities-news/bodies-of-ambushed-salvadoran-soldiers-found-in-haiti-new-york-timesreports-4970997"
+   },
+   {
+    "nombre": "Diario Libre: líder de 400 Mawozo",
+    "url": "https://www.diariolibre.com/mundo/haiti/2026/10/26/banda-400-mawozo-supone-que-salvadorenos-desaparecidos-murieron/3700954"
+   },
+   {
+    "nombre": "Infobae: la OEA pide medidas más firmes",
+    "url": "https://www.infobae.com/el-salvador/2026/10/26/el-caso-de-los-cuatro-soldados-salvadorenos-en-haiti-impulsa-a-la-oea-a-exigir-medidas-mas-firmes-contra-las-pandillas/"
+   }
+  ]
+ },
+ {
   "id": "n20261026-0635-komanche",
   "edicion_id": "e20261026-0635",
   "fecha": "2026-10-26T06:29:00Z",
