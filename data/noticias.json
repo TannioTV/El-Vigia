@@ -1,0 +1,363 @@
+[
+ {
+  "id": "n20261026-0635-komanche",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-26T06:29:00Z",
+  "tema": "Caso Komanche",
+  "tema_id": "komanche",
+  "hilo": "komanche-monterrey",
+  "titular": "Byron Reyes, amigo de Komanche, afirma que la familia le confirmó su muerte; las autoridades aún no identifican el cuerpo",
+  "bajada": "El creador de contenido Byron Reyes sostuvo en redes que habló con la familia del streamer; la Fiscalía de Nuevo León no ha emitido confirmación.",
+  "cuerpo": [
+   "Byron Reyes, creador de contenido y amigo cercano de Komanche, publicó en sus redes que conversó con la familia del streamer salvadoreño y que la noticia de su fallecimiento es real. Es la primera voz del entorno del creador que respalda la versión que circulaba desde la noche del domingo en medios de Nuevo León.",
+   "Pese a ello, las autoridades todavía no han confirmado de manera oficial la identidad del hombre hallado sin vida en una casa rentada de la colonia Paseo de Cumbres, en Monterrey. Tampoco hay, por ahora, mensajes de la familia directamente ni de las cuentas oficiales de Komanche.",
+   "Según La Razón, el cuerpo fue trasladado al Servicio Médico Forense para la autopsia, y de forma preliminar se reporta que no presentaba signos de violencia. La causa de la muerte sigue bajo investigación."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 25.733,
+   "lon": -100.385,
+   "nombre": "Paseo de Cumbres, Monterrey, N.L.",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Confirmación oficial",
+    "valor": "Pendiente"
+   },
+   {
+    "etiqueta": "Fuente de la versión",
+    "valor": "Byron Reyes (amigo), dice haber hablado con la familia"
+   },
+   {
+    "etiqueta": "Signos de violencia",
+    "valor": "No, según reportes preliminares"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "La Razón de México",
+    "url": "https://www.razon.com.mx/entretenimiento/2026/10/26/hallan-sin-vida-al-influencer-el-komanche-que-le-paso/"
+   },
+   {
+    "nombre": "López-Dóriga Digital",
+    "url": "https://lopezdoriga.com/nacional/reportan-muerte-de-streamer-el-komanche-en-monterrey-identidad-aun-sin-confirmacion-oficial/"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-komanche-1",
+  "edicion_id": "e20261026-0625",
+  "fecha": "2026-10-26T06:25:00Z",
+  "tema": "Caso Komanche",
+  "tema_id": "komanche",
+  "hilo": "komanche-monterrey",
+  "titular": "Reportan que el streamer Komanche fue hallado sin vida en Monterrey; su identidad no está confirmada",
+  "bajada": "Medios de Nuevo León señalan que el cuerpo de un hombre de 30 a 35 años, encontrado en una casa de Paseo de Cumbres, podría ser el creador de contenido salvadoreño.",
+  "cuerpo": [
+   "Varios medios locales de Nuevo León informaron la noche del domingo que un hombre encontrado sin vida dentro de una vivienda en la calle Paseo de Niza, en la colonia Paseo de Cumbres de Monterrey, podría ser el streamer salvadoreño conocido como Komanche. Hasta el cierre de esta edición, ninguna autoridad había confirmado su identidad.",
+   "De acuerdo con los reportes, vecinos de la zona notaron que la puerta de la casa llevaba abierta desde días antes. Al revisar el inmueble por temor a un robo, encontraron al hombre inconsciente y llamaron a los servicios de emergencia, que confirmaron que ya no tenía signos vitales. Según esos mismos reportes, el joven rentaba la vivienda.",
+   "La versión de que se trata de Komanche circula de manera extraoficial y en redes sociales. No hay, por ahora, un comunicado de la Fiscalía de Nuevo León, de su familia ni de sus cuentas oficiales, y tampoco se ha informado una causa de muerte. El Vigía dará seguimiento a cualquier confirmación o desmentido."
+  ],
+  "importancia": "alta",
+  "estado": "sin confirmar",
+  "lugar": {
+   "lat": 25.733,
+   "lon": -100.385,
+   "nombre": "Paseo de Cumbres, Monterrey, N.L.",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Identidad",
+    "valor": "Sin confirmar"
+   },
+   {
+    "etiqueta": "Edad estimada",
+    "valor": "30 a 35 años"
+   },
+   {
+    "etiqueta": "Lugar",
+    "valor": "Monterrey, N.L."
+   }
+  ],
+  "cronologia": [
+   {
+    "evento": "Vecinos notan que la puerta de la vivienda permanece abierta.",
+    "hora": "Días antes"
+   },
+   {
+    "evento": "Al revisar la casa, encuentran al hombre inconsciente y piden ayuda; emergencias confirma que no tiene signos vitales.",
+    "hora": "25 oct, noche"
+   },
+   {
+    "evento": "ABC Noticias publica que el fallecido podría ser El Komanche; aclara que la identidad no está confirmada.",
+    "hora": "22:06 (Monterrey)"
+   },
+   {
+    "evento": "Info7 reporta movilización policiaca en Paseo de Cumbres y la versión extraoficial sobre su identidad.",
+    "hora": "22:58 (Monterrey)"
+   },
+   {
+    "evento": "López-Dóriga retoma el reporte, también sin confirmación oficial.",
+    "hora": "23:03 (Monterrey)"
+   }
+  ],
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "ABC Noticias",
+    "url": "https://abcnoticias.mx/show/2026/10/25/reportan-muerte-del-influencer-el-komanche-en-monterrey-293489.html"
+   },
+   {
+    "nombre": "Info7",
+    "url": "https://www.info7.mx/nuevoleon/hallan-sin-vida-al-influencer-el-komanche-en-monterrey/2625701981"
+   },
+   {
+    "nombre": "López-Dóriga Digital",
+    "url": "https://lopezdoriga.com/nacional/reportan-muerte-de-streamer-el-komanche-en-monterrey-identidad-aun-sin-confirmacion-oficial/"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-0635-sacerdote-culiacan",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-26T01:05:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "sacerdote-clemente-morales",
+  "titular": "Desaparece en Culiacán el sacerdote Clemente Morales Topete",
+  "bajada": "El párroco de Cristo Resucitado, en La Campiña, no ha sido localizado desde la tarde del sábado 24 de octubre.",
+  "cuerpo": [
+   "El sacerdote Clemente Morales Topete, asignado a la parroquia de Cristo Resucitado en la colonia La Campiña de Culiacán, está desaparecido desde la tarde del sábado 24 de octubre. Su familia informó que salió del fraccionamiento Montebello alrededor de las 16:00 a bordo de una camioneta Toyota Hilux y desde entonces no se sabe de él.",
+   "Sus familiares presentaron la denuncia y la Comisión Estatal de Búsqueda de Personas emitió una ficha para localizarlo. La diócesis pidió oración y apoyo de la comunidad para dar con su paradero.",
+   "El caso ocurre en un contexto de violencia persistente en la capital sinaloense, donde las desapariciones se han vuelto frecuentes en medio de la disputa entre facciones del Cártel de Sinaloa."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 24.8091,
+   "lon": -107.394,
+   "nombre": "Culiacán, Sinaloa",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Visto por última vez",
+    "valor": "24 oct, ~16:00, fracc. Montebello"
+   },
+   {
+    "etiqueta": "Parroquia",
+    "valor": "Cristo Resucitado, col. La Campiña"
+   },
+   {
+    "etiqueta": "Vehículo",
+    "valor": "Toyota Hilux"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Excélsior",
+    "url": "https://www.excelsior.com.mx/nacional/desaparece-sacerdote-clemente-morales-culiacan"
+   },
+   {
+    "nombre": "Red Católica de Noticias",
+    "url": "https://www.redcatolica.mx/desaparece-sacerdote-en-culiacan-diocesis-llama-a-la-oracion-y-solicita-apoyo-para-localizarlo"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-0635-gta6",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-26T00:00:00Z",
+  "tema": "GTA 6",
+  "tema_id": "gta6",
+  "hilo": "gta6-lanzamiento",
+  "titular": "Rockstar lleva GTA 6 al Clásico: anuncios con \"Coming November 19\" en el Camp Nou",
+  "bajada": "La campaña de lanzamiento llegó a las pantallas del Real Madrid-Barcelona a menos de un mes del estreno.",
+  "cuerpo": [
+   "Rockstar Games colocó anuncios de GTA 6 en las pantallas LED a pie de cancha durante el Clásico entre Real Madrid y Barcelona del 25 de octubre, en el Spotify Camp Nou. Los mensajes mostraban el logo del juego y la leyenda \"Coming November 19\", reafirmando la fecha de lanzamiento.",
+   "La empresa también prepara activaciones en Miami, como un evento temático \"A Night in Vice City\" con el Miami Heat el 18 de noviembre, un día antes del estreno. No hubo anuncios nuevos sobre precio ni preventas."
+  ],
+  "importancia": "normal",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 41.3809,
+   "lon": 2.1228,
+   "nombre": "Spotify Camp Nou, Barcelona",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Fecha de lanzamiento",
+    "valor": "19 de noviembre de 2026"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Beebom",
+    "url": "https://beebom.com/gta-6-ads-el-clasico-football-match/"
+   },
+   {
+    "nombre": "Khel Now",
+    "url": "https://khelnow.com/gaming/gta-6-ads-appeared-during-real-madrid-vs-barcelona-el-clasico-match-202610"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-0635-iran",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-25T18:30:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Trump descarta un ataque a Irán \"hoy\" mientras Teherán dice que la vía diplomática sigue abierta",
+  "bajada": "Irán mantiene mensajes con Washington a través de intermediarios; Israel advierte de posibles ataques antes de las elecciones del martes.",
+  "cuerpo": [
+   "El presidente Donald Trump dijo el sábado que no habría un ataque contra Irán ese día, tras evitar inicialmente responder, y planteó públicamente que duda entre cerrar un acuerdo o volver a la ofensiva. Las negociaciones llevan semanas estancadas.",
+   "El portavoz de la cancillería iraní, Esmail Baghaei, afirmó que Teherán no ha cerrado la \"ventana diplomática\" y que sigue enviando mensajes a Estados Unidos mediante intermediarios, aunque rechazó las exigencias de \"rendición total\" de Washington.",
+   "En paralelo, el primer ministro israelí Benjamin Netanyahu advirtió que Irán o sus aliados podrían atacar antes de las elecciones del martes, y los hutíes lanzaron misiles y drones hacia Riad; las defensas saudíes interceptaron un misil balístico y los restos hirieron a dos personas."
+  ],
+  "importancia": "normal",
+  "estado": "en desarrollo",
+  "lugar": null,
+  "datos_clave": [
+   {
+    "etiqueta": "Buques escoltados por Ormuz (6 meses)",
+    "valor": "Más de 3,000, según el CENTCOM"
+   },
+   {
+    "etiqueta": "Heridos en Arabia Saudita",
+    "valor": "2, por restos de intercepción"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "AP vía Fortune",
+    "url": "https://fortune.com/2026/10/25/iran-war-messages-us-intermediaries-diplomacy-negotiations/"
+   },
+   {
+    "nombre": "CBS News",
+    "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-0635-mazatlan",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-25T16:45:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "violencia-mazatlan",
+  "titular": "Asesinan a un supervisor del C4i en Mazatlán en una jornada con cuatro homicidios",
+  "bajada": "El funcionario de la Secretaría de Seguridad Pública estatal fue hallado baleado dentro de una camioneta en el fraccionamiento San Fernando.",
+  "cuerpo": [
+   "Un supervisor operativo del C4i de la Secretaría de Seguridad Pública de Sinaloa, identificado como Jehovah \"N\", fue encontrado sin vida y con heridas de bala dentro de una camioneta en el fraccionamiento San Fernando de Mazatlán. Trabajaba en el subcentro de mando de la zona sur del estado.",
+   "En la misma jornada se reportaron otros tres asesinatos en el puerto: un hombre atacado en un taller de motocicletas, un cuerpo envuelto en bolsas en Pradera Dorada y el de un hombre de 53 años, esposado y con disparos, que estaba reportado como desaparecido desde el 21 de octubre. Además, un joven resultó gravemente herido a balazos en la Zona Dorada."
+  ],
+  "importancia": "normal",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 23.2494,
+   "lon": -106.4111,
+   "nombre": "Mazatlán, Sinaloa",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Homicidios en la jornada",
+    "valor": "4"
+   },
+   {
+    "etiqueta": "Heridos",
+    "valor": "1"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "La Prensa de Coahuila",
+    "url": "https://laprensadecoahuila.com.mx/2026/10/25/sinaloa-registra-cuatro-asesintos-y-un-ataque-a-balazs-matan-a-supervisor-operativo-del-c4i-en-mazatlan/"
+   }
+  ]
+ },
+ {
+  "id": "n20261026-0635-ucrania",
+  "edicion_id": "e20261026-0635",
+  "fecha": "2026-10-25T15:16:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Ataques cruzados con drones dejan muertos en Dnipro, Járkiv y la región rusa de Belgorod",
+  "bajada": "Rusia lanzó 153 drones contra Ucrania en una noche; Ucrania respondió con un ataque masivo sobre Belgorod.",
+  "cuerpo": [
+   "Rusia atacó la noche del viernes al sábado varias regiones de Ucrania. En la región de Dnipró murieron cuatro personas y 22 resultaron heridas, entre ellas una niña de 11 años; en Vínnytsia un dron impactó un edificio de cinco pisos y dejó seis heridos, y en Járkiv se reportó un muerto. La Fuerza Aérea ucraniana dijo haber derribado al menos 119 de los 153 drones lanzados.",
+   "Del lado ruso, las autoridades de Belgorod reportaron tres muertos y 14 heridos por un ataque con drones ucranianos que dañó decenas de edificios de departamentos y vehículos. Zelenski afirmó que en la última semana Rusia lanzó cerca de 2,300 drones, 1,600 bombas guiadas y 48 misiles contra su país.",
+   "La escalada ocurre mientras Kiev, Washington y Moscú preparan una nueva ronda de conversaciones trilaterales prevista para noviembre."
+  ],
+  "importancia": "normal",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 48.4647,
+   "lon": 35.0462,
+   "nombre": "Dnipró, Ucrania",
+   "zoom": 5
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Muertos en Ucrania (24 h)",
+    "valor": "8"
+   },
+   {
+    "etiqueta": "Muertos en Belgorod",
+    "valor": "3"
+   },
+   {
+    "etiqueta": "Drones rusos lanzados / derribados",
+    "valor": "153 / 119"
+   }
+  ],
+  "cronologia": null,
+  "grafico": {
+   "etiquetas": [
+    "Drones",
+    "Bombas guiadas",
+    "Misiles"
+   ],
+   "fuente": "Euronews / Infobae",
+   "series": [
+    {
+     "nombre": "Según Zelenski",
+     "valores": [
+      2300,
+      1600,
+      48
+     ]
+    }
+   ],
+   "tipo": "barras",
+   "titulo": "Armamento ruso lanzado contra Ucrania en la última semana",
+   "unidad": "unidades"
+  },
+  "fuentes": [
+   {
+    "nombre": "Euronews",
+    "url": "https://www.euronews.com/2026/10/25/russian-strikes-on-ukraine-kill-four-and-injure-28-authorities-say"
+   },
+   {
+    "nombre": "Infobae",
+    "url": "https://www.infobae.com/america/mundo/2026/10/25/ucrania-llevo-a-cabo-un-ataque-masivo-con-drones-contra-la-region-rusa-de-belgorod/"
+   }
+  ]
+ }
+]
