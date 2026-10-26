@@ -51,8 +51,18 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;paddin
 .cuenta .n{font-family:var(--f-head);font-weight:700;font-size:1.15rem;color:var(--red);min-width:2ch;text-align:right}
 .cuenta .fecha{color:var(--faint)}
 .mast .tag{font-style:italic;color:var(--sub);margin-top:4px;font-size:.98rem}
-nav.sections{display:flex;gap:4px 18px;flex-wrap:wrap;justify-content:center;border-top:3px double var(--rule-strong);border-bottom:1px solid var(--rule-strong);padding-block:8px;font-family:var(--f-ui);font-size:.82rem;font-weight:600}
-nav.sections button{padding:2px 0;border-bottom:2px solid transparent}
+.navbar{position:relative;display:flex;align-items:center;border-top:3px double var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+nav.sections{flex:1;min-width:0;display:flex;gap:22px;flex-wrap:nowrap;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain;padding:9px 4px;font-family:var(--f-ui);font-size:.82rem;font-weight:600;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--fl,0px),#000 calc(100% - var(--fr,0px)),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 var(--fl,0px),#000 calc(100% - var(--fr,0px)),transparent 100%)}
+nav.sections::-webkit-scrollbar{display:none}
+nav.sections.fits{justify-content:center}
+nav.sections.fl{--fl:28px} nav.sections.fr{--fr:28px}
+nav.sections button{flex:0 0 auto;white-space:nowrap;scroll-snap-align:start;padding:2px 0;border-bottom:2px solid transparent}
+.navarrow{display:none;flex:0 0 auto;width:30px;height:30px;border-radius:50%;border:1px solid var(--rule);align-items:center;justify-content:center;color:var(--ink);background:var(--paper);transition:opacity .2s,border-color .2s}
+.navarrow:hover{border-color:var(--ink)}
+.navarrow svg{width:14px;height:14px}
+.navarrow[disabled]{opacity:.25;cursor:default}
+.navarrow.l{margin-right:6px}.navarrow.r{margin-left:6px}
+@media (hover:hover) and (pointer:fine){.navbar.overflow .navarrow{display:inline-flex}}
 nav.sections button[aria-current=true]{border-bottom-color:var(--red);color:var(--red)}
 .tools{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-block:10px}
 .search{flex:1 1 220px;max-width:360px}
@@ -147,7 +157,11 @@ footer{font-family:var(--f-ui);font-size:.78rem;color:var(--faint);border-top:1p
     <h1><a href="./" id="home" title="Ir a la portada">El Vigía</a></h1>
     <div class="tag">Noticias seleccionadas y resumidas automáticamente</div>
   </header>
-  <nav class="sections" id="nav" aria-label="Secciones"></nav>
+  <div class="navbar" id="navbar">
+    <button class="navarrow l" id="nav-prev" aria-label="Secciones anteriores"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 5 8l5 5"/></svg></button>
+    <nav class="sections" id="nav" aria-label="Secciones"></nav>
+    <button class="navarrow r" id="nav-next" aria-label="Más secciones"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 5 5-5 5"/></svg></button>
+  </div>
   <div class="cuenta" id="cuenta" aria-label="Cuenta regresiva para el lanzamiento de GTA 6">
     <b>Lanzamiento de GTA 6:</b>
     <span class="reloj" aria-hidden="false"><span class="u"><span class="n" id="cd-d">–</span>d</span><span class="u"><span class="n" id="cd-h">–</span>h</span><span class="u"><span class="n" id="cd-m">–</span>min</span><span class="u"><span class="n" id="cd-s">–</span>s</span></span>
@@ -219,7 +233,20 @@ function renderNav(){
   const temas=[...new Set(noticias.map(n=>n.tema||"Otras"))].sort((a,b)=>a.localeCompare(b,"es"));
   const items=[["portada","Portada"],...temas.map(t=>[t,t]),["guardadas","Guardadas"],["archivo","Archivo"]];
   $("#nav").innerHTML=items.map(([k,l])=>'<button data-sec="'+esc(k)+'" aria-current="'+(section===k&&!openId)+'">'+esc(l)+'</button>').join("");
+  requestAnimationFrame(()=>{navState();const c=$("#nav").querySelector('[aria-current="true"]');if(c&&$("#nav").scrollWidth>$("#nav").clientWidth){const nv=$("#nav");const x=c.offsetLeft-nv.offsetLeft-(nv.clientWidth-c.offsetWidth)/2;nv.style.scrollBehavior="auto";nv.scrollLeft=Math.max(0,x);nv.style.scrollBehavior="";navState();}});
 }
+function navState(){
+  const nv=$("#nav"), bar=$("#navbar"); if(!nv) return;
+  const over=nv.scrollWidth>nv.clientWidth+2;
+  bar.classList.toggle("overflow",over); nv.classList.toggle("fits",!over);
+  const atL=nv.scrollLeft<=2, atR=nv.scrollLeft+nv.clientWidth>=nv.scrollWidth-2;
+  nv.classList.toggle("fl",over&&!atL); nv.classList.toggle("fr",over&&!atR);
+  $("#nav-prev").disabled=!over||atL; $("#nav-next").disabled=!over||atR;
+}
+$("#nav").addEventListener("scroll",navState,{passive:true});
+window.addEventListener("resize",navState);
+$("#nav-prev").addEventListener("click",()=>{const nv=$("#nav");nv.scrollBy({left:-nv.clientWidth*.7});});
+$("#nav-next").addEventListener("click",()=>{const nv=$("#nav");nv.scrollBy({left:nv.clientWidth*.7});});
 function renderTop(){
   if(ediciones.length){$("#updated").textContent="Última edición: "+when(ediciones[0].fecha);}
   const brk=noticias.filter(n=>n.importancia==="urgente" && Date.now()-new Date(n.fecha)<12*36e5).sort((a,b)=>new Date(b.fecha)-new Date(a.fecha));
