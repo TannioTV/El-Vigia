@@ -1,5 +1,98 @@
 [
  {
+  "id": "n20261027-0625-iran",
+  "edicion_id": "e20261027-0625",
+  "fecha": "2026-10-27T06:00:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Trump respalda a Netanyahu a un día de las elecciones y dice que hay que \"terminar el trabajo\" con Irán, aunque habría rechazado un ataque previo al voto",
+  "bajada": "Medios israelíes reportan choques internos por un posible ataque a Irán antes de la votación de este martes.",
+  "cuerpo": [
+   "Según The Times of Israel, el jefe del Mossad habría discutido con sus colaboradores por apoyar un plan de ataque a Irán impulsado por Netanyahu antes de las elecciones, y el jefe del Estado Mayor, Eyal Zamir, se habría opuesto a una acción militar previa al voto. CNN reportó, según ese medio, que Netanyahu pidió un ataque antes de la elección, pero Trump se negó.",
+   "Aun así, Trump reforzó su apoyo político a Netanyahu y dijo que \"hay que terminar el trabajo\", lo que alimenta la idea de que ambos podrían retomar la guerra contra Irán después de las elecciones. Netanyahu niega estar escalando las tensiones por motivos electorales. Los israelíes votan este martes 27 de octubre. Los datos provienen de titulares y resúmenes; no se verificaron todos los detalles en los artículos completos."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "nombre": "Jerusalén, Israel",
+   "zoom": 5
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Elecciones en Israel",
+    "valor": "Martes 27 oct"
+   },
+   {
+    "etiqueta": "Postura de Trump",
+    "valor": "Rechazó ataque previo al voto (según CNN)"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "The Times of Israel: liveblog 26 oct",
+    "url": "https://www.timesofisrael.com/liveblog-october-26-2026/"
+   },
+   {
+    "nombre": "PBS NewsHour: Netanyahu niega escalar tensiones",
+    "url": "https://www.pbs.org/newshour/amp/world/netanyahu-denies-allegations-hes-escalating-tensions-with-iran-before-israels-election"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-0625-komanche",
+  "edicion_id": "e20261027-0625",
+  "fecha": "2026-10-27T03:50:00Z",
+  "tema": "Caso Komanche",
+  "tema_id": "komanche",
+  "hilo": "komanche-monterrey",
+  "titular": "El padre de Komanche se despide del streamer; un reporte preliminar de la Fiscalía de Nuevo León apunta a una causa no violenta, pendiente de confirmación forense",
+  "bajada": "La Fiscalía habría recibido el aviso el domingo 25 a las 19:30; aún no hay confirmación oficial de la identidad ni de la causa.",
+  "cuerpo": [
+   "José Luis Acevedo, padre de Komanche, publicó en Facebook un mensaje de despedida en el que dice que su hijo era su orgullo. Según Infobae, también contó que el streamer llevaba cerca de diez años lidiando con depresión. Es la primera vez que un familiar directo se pronuncia públicamente, tras la confirmación del representante Byron Reyes en Instagram.",
+   "Infobae añade que la Fiscalía de Nuevo León recibió el reporte a las 7:30 p.m. del domingo 25 de octubre y que su informe preliminar apunta a que la muerte fue autoinfligida, a la espera de los resultados forenses. La propia nota aclara que las autoridades no han confirmado oficialmente ni la identidad ni la causa, por lo que el estado sigue en desarrollo. El Vigía no detalla el método por respeto a la familia.",
+   "Si tú o alguien cercano atraviesa un momento difícil, en México puedes comunicarte con la Línea de la Vida: 800 911 2000."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 25.733,
+   "lon": -100.385,
+   "nombre": "Paseo de Cumbres, Monterrey, N.L.",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Aviso a la Fiscalía",
+    "valor": "25 oct, 19:30 (hora local)"
+   },
+   {
+    "etiqueta": "Confirmación oficial de identidad y causa",
+    "valor": "Pendiente"
+   },
+   {
+    "etiqueta": "Mensaje familiar",
+    "valor": "Padre, vía Facebook"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Infobae: el mensaje del papá de El Komanche",
+    "url": "https://www.infobae.com/mexico/2026/10/27/el-conmovedor-mensaje-del-papa-de-el-komanche-tras-la-muerte-del-streamer-eras-mi-orgullo/"
+   },
+   {
+    "nombre": "El Espectador",
+    "url": "https://www.elespectador.com/revista-vea/lo-ultimo/murio-komanche-a-los-30-anos-esto-se-sabe-sobre-el-fallecimiento-del-famoso-streamer/"
+   }
+  ]
+ },
+ {
   "id": "n20261026-2215-salvador-haiti",
   "edicion_id": "e20261026-2215",
   "fecha": "2026-10-26T16:00:00Z",
