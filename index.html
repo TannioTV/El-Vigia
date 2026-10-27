@@ -147,6 +147,34 @@ h4{font-family:var(--f-ui);font-size:.78rem;letter-spacing:.09em;text-transform:
 .aviso{font-family:var(--f-ui);font-size:.8rem;color:var(--sub);background:var(--plate);padding:8px 12px;border-radius:3px;margin-bottom:10px;line-height:1.45}
 .aviso b{color:var(--ink)}
 footer{font-family:var(--f-ui);font-size:.78rem;color:var(--faint);border-top:1px solid var(--rule);margin-top:40px;padding-top:14px;line-height:1.5}
+.mapfig.big{aspect-ratio:16/10}
+.article table td:nth-child(2){min-width:170px}
+@media (max-width:600px){.mapfig.big{aspect-ratio:4/5}}
+.leyenda{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;font-family:var(--f-ui);font-size:.8rem;color:var(--sub)}
+.leyenda span{display:inline-flex;align-items:center;gap:6px}
+.dotc{display:inline-block;width:10px;height:10px;border-radius:50%}
+.leyenda i.mag{width:12px;height:12px;min-width:0;padding:0;border-radius:50%}
+.mag{display:inline-block;min-width:2.6em;text-align:center;font-family:var(--f-ui);font-weight:700;font-size:.8rem;padding:2px 6px;border-radius:3px;font-variant-numeric:tabular-nums;background:var(--plate);color:var(--ink)}
+.mag.m45{background:var(--amber-soft);color:var(--amber)}
+.mag.m6{background:var(--red-soft);color:var(--red)}
+.mag.m7{background:var(--red);color:var(--paper)}
+.leyenda i.mag.m25{background:var(--faint)}
+.leyenda i.mag.m45{background:var(--amber)}
+.leyenda i.mag.m6,.leyenda i.mag.m7{background:var(--red)}
+.leyenda i.mag.m7{box-shadow:0 0 0 2px var(--red-soft)}
+.sq{display:flex;gap:10px;align-items:flex-start;margin-top:8px}
+.clima{display:grid;gap:6px;margin-top:8px}
+.cnow{display:flex;align-items:baseline;gap:10px}
+.ci{font-size:1.8rem;line-height:1}
+.ct{font-family:var(--f-head);font-weight:700;font-size:2.2rem;line-height:1;font-variant-numeric:tabular-nums}
+.cc{font-family:var(--f-ui);font-size:.85rem;color:var(--faint)}
+.cdesc{font-family:var(--f-ui);font-size:.88rem;font-weight:600}
+.wdays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:4px}
+.wd{display:grid;justify-items:center;gap:1px;background:var(--plate);padding:6px 4px;border-radius:3px;font-family:var(--f-ui);font-size:.74rem;text-align:center}
+.wdn{text-transform:capitalize;font-weight:600;color:var(--sub)}
+.wdi{font-size:1.1rem}
+.wdt{font-weight:700;font-variant-numeric:tabular-nums}
+.wdp{color:var(--faint)}
 .note{font-family:var(--f-ui);font-size:.85rem;background:var(--red-soft);color:var(--red);padding:8px 12px;border-radius:3px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -232,7 +260,7 @@ function rankFront(r){
 /* ---------- render ---------- */
 function renderNav(){
   const temas=[...new Set(noticias.map(n=>n.tema||"Otras"))].sort((a,b)=>a.localeCompare(b,"es"));
-  const items=[["portada","Portada"],...temas.map(t=>[t,t]),["guardadas","Guardadas"],["archivo","Archivo"]];
+  const items=[["portada","Portada"],...temas.map(t=>[t,t]),["mapa","Mapa"],["sismos","Sismos"],["guardadas","Guardadas"],["archivo","Archivo"]];
   $("#nav").innerHTML=items.map(([k,l])=>'<button data-sec="'+esc(k)+'" aria-current="'+(section===k&&!openId)+'">'+esc(l)+'</button>').join("");
   requestAnimationFrame(()=>{navState();const c=$("#nav").querySelector('[aria-current="true"]');if(c&&$("#nav").scrollWidth>$("#nav").clientWidth){const nv=$("#nav");const x=c.offsetLeft-nv.offsetLeft-(nv.clientWidth-c.offsetWidth)/2;nv.style.scrollBehavior="auto";nv.scrollLeft=Math.max(0,x);nv.style.scrollBehavior="";navState();}});
 }
@@ -291,6 +319,8 @@ function renderFront(){
     (more.length?'<section><h3 class="section-title">Más noticias</h3><div>'+more.map(n=>
       '<div class="list-item hl" data-open="'+esc(n.id)+'"><div class="kicker" style="font-size:.66rem">'+esc(n.tema||"Alerta")+'</div><div class="lt '+(n.leida?'':'unread')+'">'+esc(n.titular)+'</div>'+cardMeta(n)+'</div>').join("")+'</div></section>':'')+
   '</div><aside class="side">'+
+    '<section id="clima-box">'+climaHTML()+'</section>'+
+    '<section id="sismo-box">'+sismoTeaserHTML()+'</section>'+
     (devU.length?'<section><h3 class="section-title">En desarrollo</h3><div>'+devU.map(n=>
       '<div class="list-item hl" data-open="'+esc(n.id)+'"><div class="lt">'+esc(n.titular)+'</div><div style="margin-top:4px">'+estadoPill(n.estado)+' <span class="meta">'+esc(when(n.fecha))+'</span></div></div>').join("")+'</div></section>':'')+
     '<section><h3 class="section-title">Ediciones recientes</h3><div class="ed-list">'+(ediciones.slice(0,8).map(e=>
@@ -341,7 +371,7 @@ function renderArticle(n){
 function render(){
   renderNav(); renderTop();
   if(openId){const n=noticias.find(x=>x.id===openId); if(n){renderArticle(n);return;} openId=null;}
-  if(section==="archivo") renderArchive(); else renderFront();
+  if(section==="archivo") renderArchive(); else if(section==="mapa") renderMapa(); else if(section==="sismos") renderSismos(); else renderFront();
 }
 
 /* ---------- charts & maps (ECharts) ---------- */
@@ -421,6 +451,149 @@ async function drawChart(g){
 window.addEventListener("resize",()=>charts.forEach(c=>{try{c.resize();}catch(e){}}));
 try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{disposeCharts();render();});}catch(e){}
 new MutationObserver(()=>{disposeCharts();render();}).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+
+/* ---------- datos en vivo: clima, sismos y mapa de noticias ---------- */
+const CLIMA_URL="https://api.open-meteo.com/v1/forecast?latitude=37.3382&longitude=-121.8863&current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,is_day&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles&forecast_days=4";
+const SISMOS_REGION_URL="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson";
+const SISMOS_MUNDO_URL="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson";
+const REGION={lon:[-170,-60],lat:[12,72]}; // México, EE.UU. (con Alaska y Hawái) y alrededores
+let clima=null, climaErr=false, sismosR=null, sismosM=null, sismosErr=false;
+const WMO={0:"Despejado",1:"Mayormente despejado",2:"Parcialmente nublado",3:"Nublado",45:"Niebla",48:"Niebla con escarcha",51:"Llovizna ligera",53:"Llovizna",55:"Llovizna intensa",56:"Llovizna helada",57:"Llovizna helada intensa",61:"Lluvia ligera",63:"Lluvia",65:"Lluvia fuerte",66:"Lluvia helada",67:"Lluvia helada fuerte",71:"Nieve ligera",73:"Nieve",75:"Nieve fuerte",77:"Granizo fino",80:"Chubascos ligeros",81:"Chubascos",82:"Chubascos fuertes",85:"Chubascos de nieve",86:"Chubascos de nieve fuertes",95:"Tormenta eléctrica",96:"Tormenta con granizo",99:"Tormenta fuerte con granizo"};
+function icono(c,dia){
+  if(c===0||c===1) return dia===0?"☾":"☀";
+  if(c===2) return "⛅"; if(c===3||c===45||c===48) return "☁";
+  if(c>=95) return "⛈"; if((c>=71&&c<=77)||c===85||c===86) return "❄";
+  return "☂";
+}
+const fC=f=>Math.round((f-32)*5/9);
+function climaHTML(){
+  if(climaErr&&!clima) return '<h3 class="section-title">Clima en San José</h3><p class="meta" style="margin:8px 0 0">No se pudo cargar el clima ahora. Se intentará de nuevo en unos minutos.</p>';
+  if(!clima) return '<h3 class="section-title">Clima en San José</h3><p class="meta" style="margin:8px 0 0">Cargando el clima…</p>';
+  const c=clima.current, d=clima.daily;
+  const dias=d.time.slice(1,4).map((t,i)=>{
+    const k=i+1, nom=new Date(t+"T12:00:00").toLocaleDateString("es-MX",{weekday:"short"}).replace(".","");
+    return '<div class="wd"><span class="wdn">'+esc(nom)+'</span><span class="wdi" aria-hidden="true">'+icono(d.weather_code[k],1)+'</span><span class="wdt">'+Math.round(d.temperature_2m_max[k])+'° / '+Math.round(d.temperature_2m_min[k])+'°</span><span class="wdp">'+(d.precipitation_probability_max[k]!=null?d.precipitation_probability_max[k]+'% lluvia':'')+'</span></div>';
+  }).join("");
+  return '<h3 class="section-title">Clima en San José</h3>'+
+    '<div class="clima"><div class="cnow"><span class="ci" aria-hidden="true">'+icono(c.weather_code,c.is_day)+'</span><span class="ct">'+Math.round(c.temperature_2m)+'°F</span><span class="cc">'+fC(c.temperature_2m)+'°C</span></div>'+
+    '<div class="cdesc">'+esc(WMO[c.weather_code]||"")+' · Se siente como '+Math.round(c.apparent_temperature)+'°F</div>'+
+    '<div class="meta">Hoy: máx. '+Math.round(d.temperature_2m_max[0])+'° · mín. '+Math.round(d.temperature_2m_min[0])+'° · viento '+Math.round(c.wind_speed_10m)+' mph · humedad '+Math.round(c.relative_humidity_2m)+'%</div>'+
+    '<div class="wdays">'+dias+'</div>'+
+    '<div class="cap">Datos de Open-Meteo, actualizados cada 30 minutos.</div></div>';
+}
+function enRegion(f){const [lon,lat]=f.geometry.coordinates; return lon>=REGION.lon[0]&&lon<=REGION.lon[1]&&lat>=REGION.lat[0]&&lat<=REGION.lat[1];}
+function sismoFecha(ms){return new Date(ms).toLocaleString("es-MX",{timeZone:TZ,weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});}
+function magClase(m){return m>=7?"m7":m>=6?"m6":m>=4.5?"m45":"m25";}
+function lugarES(p){return String(p||"Ubicación sin nombre").replace(/^(\d+) km ([NSEW]{1,3}) of /,(x,k,dir)=>k+" km al "+({N:"N",S:"S",E:"E",W:"O",NE:"NE",NW:"NO",SE:"SE",SW:"SO",NNE:"NNE",NNW:"NNO",SSE:"SSE",SSW:"SSO",ENE:"ENE",ESE:"ESE",WNW:"ONO",WSW:"OSO"}[dir]||dir)+" de ");}
+function sismoTeaserHTML(){
+  let cuerpo;
+  if(!sismosR) cuerpo=sismosErr?'<p class="meta" style="margin:8px 0 0">No se pudieron cargar los sismos ahora.</p>':'<p class="meta" style="margin:8px 0 0">Cargando sismos…</p>';
+  else{
+    const dia=Date.now()-864e5;
+    const hoy=sismosR.filter(f=>f.properties.time>=dia).sort((a,b)=>b.properties.mag-a.properties.mag);
+    const top=hoy[0];
+    cuerpo=top?'<div class="sq"><span class="mag '+magClase(top.properties.mag)+'">'+top.properties.mag.toFixed(1)+'</span><div><div class="lt" style="font-size:.95rem">'+esc(lugarES(top.properties.place))+'</div><div class="meta">'+esc(sismoFecha(top.properties.time))+' · el más fuerte de las últimas 24 h ('+hoy.length+' sismos de 2.5 o más)</div></div></div>'
+      :'<p class="meta" style="margin:8px 0 0">Sin sismos de 2.5 o más en las últimas 24 horas.</p>';
+  }
+  return '<h3 class="section-title">Sismos en México y EE.UU.</h3>'+cuerpo+'<button class="btn" data-sec="sismos" style="margin-top:10px">Ver mapa de sismos</button>';
+}
+function refrescarLateral(){
+  const a=document.getElementById("clima-box"); if(a) a.innerHTML=climaHTML();
+  const b=document.getElementById("sismo-box"); if(b) b.innerHTML=sismoTeaserHTML();
+}
+async function cargarClima(){
+  try{const r=await fetch(CLIMA_URL,{cache:"no-store"}); if(!r.ok) throw 0; clima=await r.json(); climaErr=false;}catch(e){climaErr=true;}
+  refrescarLateral();
+}
+async function cargarSismos(){
+  try{
+    const [a,b]=await Promise.all([fetch(SISMOS_REGION_URL,{cache:"no-store"}),fetch(SISMOS_MUNDO_URL,{cache:"no-store"})]);
+    if(!a.ok||!b.ok) throw 0;
+    const [ja,jb]=await Promise.all([a.json(),b.json()]);
+    sismosR=(ja.features||[]).filter(f=>f&&f.properties&&typeof f.properties.mag==="number"&&f.geometry&&enRegion(f));
+    sismosM=(jb.features||[]).filter(f=>f&&f.properties&&f.properties.mag>=7&&f.geometry);
+    sismosErr=false;
+  }catch(e){sismosErr=true;}
+  refrescarLateral();
+  if(section==="sismos"&&!openId){disposeCharts();render();}
+}
+setTimeout(()=>{cargarClima();cargarSismos();},300);
+setInterval(()=>{if(!document.hidden) cargarClima();},30*60*1000);
+setInterval(()=>{if(!document.hidden) cargarSismos();},10*60*1000);
+
+function geoBase(extra){
+  return Object.assign({map:"world",roam:true,scaleLimit:{min:1,max:40},
+    itemStyle:{areaColor:tok("--paper"),borderColor:tok("--faint"),borderWidth:.6},
+    emphasis:{itemStyle:{areaColor:tok("--plate")},label:{show:false}},label:{show:false}},extra||{});
+}
+function renderSismos(){
+  const v=$("#view");
+  if(!sismosR){
+    v.innerHTML='<div class="empty"><h2>Sismos</h2>'+(sismosErr?'No se pudieron cargar los datos del USGS. Revisa tu conexión y recarga la página.':'Cargando los datos del Servicio Geológico de EE.UU…')+'</div>';
+    return;
+  }
+  const fuertes=sismosR.slice().sort((a,b)=>b.properties.mag-a.properties.mag).slice(0,20);
+  const m7=(sismosM||[]).slice().sort((a,b)=>b.properties.time-a.properties.time);
+  const fila=f=>{const p=f.properties,u=safeUrl(p.url);return '<tr><td class="t"><span class="mag '+magClase(p.mag)+'">'+p.mag.toFixed(1)+'</span></td><td>'+esc(lugarES(p.place))+'</td><td class="t">'+esc(sismoFecha(p.time))+'</td><td class="t">'+Math.round(f.geometry.coordinates[2])+' km</td><td>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">USGS</a>':'')+'</td></tr>';};
+  v.innerHTML='<div class="article" style="max-width:980px">'+
+    '<div class="kicker">Datos en vivo</div><h2>Sismos en México y Estados Unidos</h2>'+
+    '<p class="dek">Sismos de magnitud 2.5 o más en los últimos 7 días. Puedes acercar y mover el mapa. Toca un punto para ver el detalle.</p>'+
+    '<div class="leyenda"><span><i class="mag m25"></i>2.5 a 4.4</span><span><i class="mag m45"></i>4.5 a 5.9</span><span><i class="mag m6"></i>6.0 a 6.9</span><span><i class="mag m7"></i>7 o más</span><span class="meta">'+sismosR.length+' sismos</span></div>'+
+    '<div class="mapfig big" id="map-sismos"><div class="mapbox"></div></div>'+
+    '<section><h4>Los más fuertes de la semana</h4><div class="tablewrap"><table><thead><tr><th>Mag.</th><th>Lugar</th><th>Fecha (hora de California)</th><th>Profundidad</th><th></th></tr></thead><tbody>'+fuertes.map(fila).join("")+'</tbody></table></div></section>'+
+    '<section><h4>Sismos de 7 o más en el mundo · últimos 30 días</h4>'+
+      (m7.length?'<div class="mapfig" id="map-m7"><div class="mapbox"></div></div><div class="tablewrap"><table><thead><tr><th>Mag.</th><th>Lugar</th><th>Fecha (hora de California)</th><th>Profundidad</th><th></th></tr></thead><tbody>'+m7.map(fila).join("")+'</tbody></table></div>'
+        :'<p class="meta" style="margin:8px 0 0">No hubo sismos de magnitud 7 o más en el mundo en los últimos 30 días.</p>')+'</section>'+
+    '<p class="cap">Fuente: Servicio Geológico de Estados Unidos (USGS), se actualiza cada 10 minutos. Para México, el reporte oficial es del <a href="http://www.ssn.unam.mx/" target="_blank" rel="noopener">Servicio Sismológico Nacional</a>.</p>'+
+  '</div>';
+  dibujarSismos();
+}
+async function dibujarSismos(){
+  const ok=await ensureMap();
+  const pinta=(id,feats,geoExtra)=>{
+    const box=document.getElementById(id); if(!box) return; const el=box.querySelector(".mapbox");
+    if(!ok){el.innerHTML='<div class="mapfallback">No se pudo cargar el mapa. La lista de abajo tiene todos los datos.</div>';return;}
+    const c=echarts.init(el,null,{renderer:"canvas"}); charts.push(c);
+    const col={m25:tok("--faint"),m45:tok("--amber"),m6:tok("--red"),m7:tok("--red")};
+    c.setOption({animation:false,
+      tooltip:{trigger:"item",backgroundColor:tok("--paper"),borderColor:tok("--rule"),textStyle:{color:tok("--ink"),fontFamily:"Libre Franklin, Arial, sans-serif"},
+        formatter:p=>p.data&&p.data.f?'<b>M '+p.data.f.properties.mag.toFixed(1)+'</b><br>'+esc(lugarES(p.data.f.properties.place))+'<br>'+esc(sismoFecha(p.data.f.properties.time)):""},
+      geo:geoBase(geoExtra),
+      series:[{type:"scatter",coordinateSystem:"geo",
+        data:feats.slice().sort((a,b)=>a.properties.mag-b.properties.mag).map(f=>({f,value:[f.geometry.coordinates[0],f.geometry.coordinates[1]],
+          symbolSize:Math.max(4,Math.pow(f.properties.mag,2)*0.9),itemStyle:{color:col[magClase(f.properties.mag)],opacity:f.properties.mag>=4.5?.85:.55,borderColor:tok("--paper"),borderWidth:.6}}))}]});
+    c.on("click",p=>{const u=p.data&&p.data.f&&safeUrl(p.data.f.properties.url); if(u) window.open(u,"_blank","noopener");});
+  };
+  pinta("map-sismos",sismosR,{boundingCoords:[[REGION.lon[0]+30,REGION.lat[1]-12],[REGION.lon[1]-5,REGION.lat[0]]]});
+  if(sismosM&&sismosM.length) pinta("map-m7",sismosM,{center:[0,15],zoom:1.1});
+}
+
+function renderMapa(){
+  const v=$("#view");
+  const conLugar=noticias.filter(n=>n.lugar&&typeof n.lugar.lat==="number"&&typeof n.lugar.lon==="number").sort((a,b)=>new Date(b.fecha)-new Date(a.fecha));
+  const temas=[...new Set(conLugar.map(n=>n.tema||"Otras"))];
+  const pal=["--red","--amber","--green","--ink","--faint","--sub"];
+  const colorTema=t=>tok(pal[temas.indexOf(t)%pal.length]);
+  v.innerHTML='<div class="article" style="max-width:1100px">'+
+    '<div class="kicker">Mapa</div><h2>Dónde pasan las noticias</h2>'+
+    '<p class="dek">'+(conLugar.length?conLugar.length+(conLugar.length===1?' nota con ubicación':' notas con ubicación')+'. Toca un punto para abrir la nota.':'Todavía no hay notas con ubicación.')+'</p>'+
+    (conLugar.length?'<div class="leyenda">'+temas.map(t=>'<span><i class="dotc" style="background:'+colorTema(t)+'"></i>'+esc(t)+'</span>').join("")+'</div>':'')+
+    '<div class="mapfig big" id="map-noticias"><div class="mapbox"></div></div>'+
+    (conLugar.length?'<section><h4>Notas en el mapa</h4>'+conLugar.map(n=>'<div class="list-item hl" data-open="'+esc(n.id)+'"><div class="kicker" style="font-size:.66rem">'+esc(n.tema||"Alerta")+' · '+esc(n.lugar.nombre||"")+'</div><div class="lt '+(n.leida?'':'unread')+'">'+esc(n.titular)+'</div>'+cardMeta(n)+'</div>').join("")+'</section>':'')+
+  '</div>';
+  (async()=>{
+    const ok=await ensureMap(); const box=document.getElementById("map-noticias"); if(!box) return; const el=box.querySelector(".mapbox");
+    if(!ok){el.innerHTML='<div class="mapfallback">No se pudo cargar el mapa. La lista de abajo tiene todas las notas.</div>';return;}
+    const c=echarts.init(el,null,{renderer:"svg"}); charts.push(c);
+    c.setOption({animation:false,
+      tooltip:{trigger:"item",backgroundColor:tok("--paper"),borderColor:tok("--rule"),textStyle:{color:tok("--ink"),fontFamily:"Libre Franklin, Arial, sans-serif"},extraCssText:"max-width:280px;white-space:normal",
+        formatter:p=>p.data&&p.data.n?'<b>'+esc(p.data.n.tema||"")+'</b><br>'+esc(p.data.n.titular)+'<br><span style="opacity:.7">'+esc(p.data.n.lugar.nombre||"")+'</span>':""},
+      geo:geoBase({center:[-30,25],zoom:1.15}),
+      series:[{type:"scatter",coordinateSystem:"geo",symbolSize:13,
+        data:conLugar.map(n=>({n,value:[n.lugar.lon,n.lugar.lat],itemStyle:{color:colorTema(n.tema||"Otras"),borderColor:tok("--paper"),borderWidth:1.5}}))}]});
+    c.on("click",p=>{if(p.data&&p.data.n) open(p.data.n.id);});
+  })();
+}
 
 /* ---------- interactions (estado por navegador) ---------- */
 const LS="elvigia:estado";
