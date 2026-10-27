@@ -1,5 +1,105 @@
 [
  {
+  "id": "n20261027-1522-israel-votos",
+  "edicion_id": "e20261027-1522",
+  "fecha": "2026-10-27T15:00:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Israel vota con Irán en el centro de la campaña; las encuestas no dan mayoría a ningún bloque",
+  "bajada": "Netanyahu y Eisenkot compiten hoy en unas elecciones cuyo resultado puede definir si EE.UU. e Israel retoman acciones contra Teherán.",
+  "cuerpo": [
+   "Los israelíes votan este martes 27 de octubre, de 7:00 a 22:00 hora local, para elegir a los 120 diputados de la Knesset. Se esperan sondeos de salida al cierre de las urnas; el recuento final se prevé hacia el viernes y los resultados oficiales el 4 de noviembre. Un promedio de encuestas de los canales 11, 12 y 13 da 50 escaños al bloque de Netanyahu y 54 al de Gadi Eisenkot, sin que ninguno llegue a los 61 necesarios.",
+   "El tema Irán pesa en la jornada: Netanyahu ha dicho que Trump estaría dispuesto a actuar para eliminar la amenaza iraní mientras él siga en el poder, y que ordenó al Mossad y a las FDI trabajar para derribar al régimen iraní. Analistas citados por Iran International creen que el periodo posterior a las elecciones de Israel y de EE.UU. (3 de noviembre) podría ser decisivo, mientras Qatar y Pakistán empujan una negociación. Este resumen no incluye novedades militares nuevas en las últimas horas."
+  ],
+  "importancia": "normal",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "nombre": "Jerusalén, Israel",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Escaños en juego",
+    "valor": "120 (mayoría: 61)"
+   },
+   {
+    "etiqueta": "Promedio de encuestas",
+    "valor": "Eisenkot 54 – Netanyahu 50"
+   },
+   {
+    "etiqueta": "Resultados oficiales",
+    "valor": "4 de noviembre"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/10/27/israel-election-results-2026-when-will-we-know-who-won-and-whats-next"
+   },
+   {
+    "nombre": "TIME",
+    "url": "https://time.com/article/2026/10/27/israel-netanyahu-eisenkot-knesset-election-explainer/"
+   },
+   {
+    "nombre": "Iran International",
+    "url": "https://www.iranintl.com/en/202610252048"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-1522-koenig",
+  "edicion_id": "e20261027-1522",
+  "fecha": "2026-10-27T12:00:00Z",
+  "tema": "Muertes de famosos en Occidente",
+  "tema_id": "muertes-famosos",
+  "hilo": "muerte-walter-koenig",
+  "titular": "Mientras dormías: muere a los 90 años Walter Koenig, el Chekov de la serie original de Star Trek",
+  "bajada": "Sus representantes informaron que falleció por causas naturales en su casa de North Hollywood.",
+  "cuerpo": [
+   "El actor estadounidense Walter Koenig, conocido mundialmente por interpretar al navegante ruso Pavel Chekov en Star Trek, murió a los 90 años. Según sus representantes, falleció por causas de vejez en su casa de North Hollywood, acompañado de su hija y su sobrina.",
+   "Koenig se unió a la serie original en su segunda temporada, en 1967, y repitió el personaje en las seis películas con el elenco original entre 1979 y 1991. Antes y después trabajó en televisión, escribió guiones para series como Family y The Incredible Hulk, participó en Babylon 5 y dio clases en UCLA. Le sobrevive su hija Danielle."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 34.187,
+   "lon": -118.3813,
+   "nombre": "North Hollywood, California",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Edad",
+    "valor": "90 años"
+   },
+   {
+    "etiqueta": "Personaje",
+    "valor": "Pavel Chekov (Star Trek, desde 1967)"
+   },
+   {
+    "etiqueta": "Causa informada",
+    "valor": "Vejez, en su casa"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Euronews (español)",
+    "url": "https://es.euronews.com/2026/10/27/muere-a-los-90-anos-walter-koenig-el-chekov-de-star-trek"
+   },
+   {
+    "nombre": "NBC News",
+    "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/walter-koenig-actor-played-chekov-original-star-trek-series-dies-90-rcna605743"
+   }
+  ]
+ },
+ {
   "id": "n20261027-0625-iran",
   "edicion_id": "e20261027-0625",
   "fecha": "2026-10-27T06:00:00Z",
@@ -40,6 +140,55 @@
    {
     "nombre": "PBS NewsHour: Netanyahu niega escalar tensiones",
     "url": "https://www.pbs.org/newshour/amp/world/netanyahu-denies-allegations-hes-escalating-tensions-with-iran-before-israels-election"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-1522-ucrania",
+  "edicion_id": "e20261027-1522",
+  "fecha": "2026-10-27T06:00:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Mientras dormías: Rusia lanza 16 misiles balísticos y más de 280 drones contra Ucrania; Zelenski reclama interceptores Patriot",
+  "bajada": "El ataque nocturno golpeó Kyiv y al menos diez regiones más; deja un muerto y quince heridos según los reportes actualizados.",
+  "cuerpo": [
+   "Según el presidente Volodímir Zelenski, Rusia disparó durante la noche del martes 27 de octubre 16 misiles balísticos y más de 280 drones. La Fuerza Aérea ucraniana informó que neutralizó dos misiles balísticos Iskander-M/S-400 y 255 drones, con impactos registrados en 25 ubicaciones.",
+   "En Kyiv resultaron heridas personas en el campus universitario y sus alrededores, el puente Pivdennyi quedó cerrado mientras se evalúan los daños y hubo interrupciones en la línea verde del metro. También se reportaron ataques en las regiones de Vinnytsia, Zaporiyia, Dnipropetrovsk, Járkiv, Odesa, Chernihiv, Sumy, Donetsk, Jersón y Chernivtsi. Zelenski dijo que los blancos fueron sobre todo infraestructura energética, logística y zonas urbanas civiles.",
+   "Zelenski aprovechó para criticar los retrasos en la entrega de interceptores para los sistemas Patriot y NASAMS: afirmó que cada demora se traduce en otro golpe ruso. Según lo que dijo un día antes, Ucrania habría recibido solo 24 interceptores Patriot de EE.UU. en 90 días, frente a unos 350 mensuales que necesita, y Kyiv pidió a Reino Unido, Francia, Alemania, Italia y Polonia ceder parte de sus existencias."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 50.4501,
+   "lon": 30.5234,
+   "nombre": "Kyiv, Ucrania",
+   "zoom": 6
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Misiles balísticos lanzados",
+    "valor": "16 (según Zelenski)"
+   },
+   {
+    "etiqueta": "Drones lanzados",
+    "valor": "más de 280"
+   },
+   {
+    "etiqueta": "Neutralizados (Fuerza Aérea)",
+    "valor": "2 misiles y 255 drones"
+   },
+   {
+    "etiqueta": "Víctimas reportadas",
+    "valor": "1 muerto y 15 heridos"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Kyiv Post",
+    "url": "https://www.kyivpost.com/post/88297"
    }
   ]
  },
