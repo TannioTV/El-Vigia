@@ -1,5 +1,128 @@
 [
  {
+  "id": "n20261027-1815-iran-moscu",
+  "edicion_id": "e20261027-1815",
+  "fecha": "2026-10-27T17:30:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Putin recibe en Moscú al presidente de Irán y al emir de Catar; Teherán dice que EE.UU. no es serio en las negociaciones",
+  "bajada": "Catar mantiene su mediación mientras la guerra se acerca a ocho meses.",
+  "cuerpo": [
+   "Vladimir Putin recibe en Moscú al presidente iraní, Masoud Pezeshkian, y al emir de Catar, Tamim bin Hamad Al Thani, durante una cumbre de países exportadores de gas. Según medios estatales iraníes, Pezeshkian y el emir revisaron las relaciones bilaterales y la cooperación energética; no se informó que hablaran de la guerra con EE.UU. e Israel.",
+   "Catar participa en la mediación para terminar el conflicto y una delegación suya visitó Teherán. Su Cancillería pidió a Irán dejar de amenazar a los Estados del Golfo para que la diplomacia baje la tensión. El título del seguimiento de Al Jazeera indica que Irán considera que EE.UU. no es serio sobre las pláticas, aunque la página no amplió ese punto.",
+   "Irán también informó que un petrolero se incendió tras chocar con minas al este del estrecho de Ormuz; no hay más detalles verificados."
+  ],
+  "importancia": "normal",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "nombre": "Moscú, Rusia",
+   "zoom": 4
+  },
+  "datos_clave": null,
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Al Jazeera (cobertura en vivo)",
+    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/iran-war-live-iran-says-us-not-serious-on-talks-ship-on-fire-off-iraq"
+   },
+   {
+    "nombre": "Al Jazeera",
+    "url": "https://aljazeera.com/news/2026/10/27/qatars-emir-meets-irans-pezeshkian-in-moscow"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-1815-ucrania-llamada",
+  "edicion_id": "e20261027-1815",
+  "fecha": "2026-10-27T17:00:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Líderes de Finlandia y Noruega hablan con Putin en una rara llamada antes de las pláticas en Abu Dabi",
+  "bajada": "Es poco común que líderes europeos hablen directo con Putin; Moscú, entre tanto, dice haber atacado infraestructura de transporte en Kyiv.",
+  "cuerpo": [
+   "El presidente de Finlandia, Alexander Stubb, y el primer ministro de Noruega, Jonas Gahr Store, llamaron a Vladimir Putin para transmitirle mensajes antes de las conversaciones mediadas por EE.UU. previstas en Abu Dabi. Zelenski habló con ambos después y dijo que le transmitieron la necesidad de pasos reales para reducir los ataques a la infraestructura energética de Ucrania.",
+   "Stubb afirmó que terminar la guerra requiere conversaciones directas. Ambos dijeron hablar a título de sus países, no de Europa, y que su apoyo a Ucrania continúa. La mayoría de líderes de Europa occidental ha evitado el contacto directo con Putin desde la invasión de 2022.",
+   "Lo nuevo frente a la nota de la mañana: el Ministerio de Defensa ruso dijo que sus ataques apuntaron a infraestructura de transporte en Kyiv, un centro logístico en Járkov y sitios industriales y buques de carga que, según Moscú, servían a fines militares. Un funcionario ucraniano lo calificó de grave escalada contra su logística. Ataques rusos dejaron muertos y heridos en Járkov y Pavlohrad."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 50.4501,
+   "lon": 30.5234,
+   "nombre": "Kyiv, Ucrania",
+   "zoom": 5
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Ataque nocturno",
+    "valor": "16 misiles balísticos y más de 280 drones"
+   },
+   {
+    "etiqueta": "Próximo paso",
+    "valor": "Pláticas mediadas por EE.UU. en Abu Dabi"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Al Jazeera",
+    "url": "https://aljazeera.com/news/2026/10/27/russia-targets-kyiv-as-finnish-norwegian-leaders-hold-rare-call-with-putin"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-1815-sinaloa-supervision",
+  "edicion_id": "e20261027-1815",
+  "fecha": "2026-10-27T16:24:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "violencia-mazatlan",
+  "titular": "Defensa, Marina y Seguridad visitarán Sinaloa esta semana por instrucción de Sheinbaum",
+  "bajada": "García Harfuch anunció supervisiones coordinadas mientras Mazatlán sigue marcada por la crisis del penal de El Castillo.",
+  "cuerpo": [
+   "El secretario de Seguridad, Omar García Harfuch, informó que, por instrucción de la presidenta Claudia Sheinbaum, las secretarías de Defensa, Marina y Seguridad y Protección Ciudadana harán esta semana visitas coordinadas en Sinaloa. El titular de Defensa acude este martes 27; las otras dependencias irán en otros días.",
+   "La agenda incluye supervisar los despliegues, conocer las necesidades de las policías estatal y municipales de Culiacán y Mazatlán, revisar el funcionamiento del C4 y visitar el terreno previsto para el nuevo penal, con capacidad proyectada para 2,640 personas.",
+   "El anuncio llega después de los enfrentamientos del 8 y 9 de octubre en el penal de El Castillo, en Mazatlán, que dejaron 12 muertos, entre ellos un niño de dos años. La gobernadora Graciela Domínguez Nava reconoció el lunes que aún no se sustituye al director del penal, suspendido temporalmente.",
+   "La misma fuente menciona que se localizó una cabeza humana afuera del Ayuntamiento de Mazatlán; la Fiscalía estatal investiga y la identidad no está establecida. Este último dato proviene de un solo medio y no pude confirmarlo en una segunda fuente."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 23.2494,
+   "lon": -106.4111,
+   "nombre": "Mazatlán, Sinaloa",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Despliegue federal",
+    "valor": "más de 20 mil elementos (Gobierno de Sinaloa, 18 sep)"
+   },
+   {
+    "etiqueta": "Homicidios dolosos ene-sep 2026",
+    "valor": "-23.7% frente a 2025"
+   },
+   {
+    "etiqueta": "Penal El Castillo, 8-9 oct",
+    "valor": "12 muertos"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "La Silla Rota",
+    "url": "https://lasillarota.com/nacion/2026/10/27/harfuch-alista-supervision-en-sinaloa-ante-crisis-de-seguridad-534748.html"
+   }
+  ]
+ },
+ {
   "id": "n20261027-1522-israel-votos",
   "edicion_id": "e20261027-1522",
   "fecha": "2026-10-27T15:00:00Z",
