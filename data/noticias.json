@@ -1,5 +1,834 @@
 [
  {
+  "id": "n20261029-1555-dnipro",
+  "edicion_id": "e20261029-1555",
+  "fecha": "2026-10-29T13:30:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Mientras dormías: un dron ruso golpea una estación de tren en Dnipró y deja al menos 14 muertos",
+  "bajada": "Los recuentos difieren entre 13 y 14 fallecidos; Zelenski pide no relajar las sanciones contra Moscú.",
+  "cuerpo": [
+   "De acuerdo con el gobernador regional, Oleksandr Ganzha, un dron ruso impactó el jueves 29 de octubre un andén de la estación de tren de Dnipró, donde había un tren de cercanías y otro de pasajeros. Swissinfo reporta al menos 14 muertos y 14 heridos, seis de ellos graves, mientras que Atlántico habla de 13 muertos y 10 heridos; la diferencia se debe a recuentos distintos y puede cambiar. La Fuerza Aérea ucraniana dijo que interceptó tres drones, pero un cuarto eludió las defensas.",
+   "Zelenski calificó el ataque de terrorista y de \"horrible\", y pidió a la UE, EE.UU. y el G7 nuevas sanciones; afirmó que las sanciones no deben relajarse mientras continúe la guerra y cuestionó el acuerdo de Trump con Putin que alivia sanciones a cambio de diésel. Macron expresó su apoyo a Ucrania y reclamó más presión diplomática sobre Rusia.",
+   "Funcionarios locales reportan además otros ataques: en Kremenchuk (Poltava) murieron tres personas y unas 15 resultaron heridas al impactar un dron en un edificio de apartamentos, y en Chernígov murieron dos adolescentes y 23 personas quedaron heridas. Lo nuevo frente a las notas anteriores del hilo: es el ataque más mortífero de los últimos días y ocurre a pocos días de la ronda de pláticas prevista de forma tentativa para el 4 de noviembre en Abu Dabi."
+  ],
+  "importancia": "urgente",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 48.4647,
+   "lon": 35.0462,
+   "nombre": "Dnipró, Ucrania",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Muertos en la estación de Dnipró",
+    "valor": "13 a 14 (según la fuente)"
+   },
+   {
+    "etiqueta": "Heridos",
+    "valor": "10 a 14, varios graves"
+   },
+   {
+    "etiqueta": "Kremenchuk",
+    "valor": "3 muertos, ~15 heridos"
+   },
+   {
+    "etiqueta": "Chernígov",
+    "valor": "2 adolescentes muertos, 23 heridos"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Swissinfo (29 oct)",
+    "url": "https://www.swissinfo.ch/spa/un-ataque-con-dron-ruso-causa-14-muertos-en-una-estaci%C3%B3n-de-tren-en-ucrania/92295687"
+   },
+   {
+    "nombre": "Atlántico (29 oct)",
+    "url": "https://www.atlantico.net/mundo/13-muertos-ataque-ruso-drones-estacion-tren-ucrania_1_20261029-4471531.html"
+   }
+  ]
+ },
+ {
+  "id": "n20261029-1555-iran",
+  "edicion_id": "e20261029-1555",
+  "fecha": "2026-10-29T07:00:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Vance escribe a un alto funcionario iraní para reabrir las negociaciones mientras EE.UU. alerta a aliados de posibles ataques tras el 3 de noviembre",
+  "bajada": "Según el Wall Street Journal, la carta no trae un plan de paz concreto; Irán sigue evaluando el plan de siete días con mediadores.",
+  "cuerpo": [
+   "Según el Wall Street Journal, citado por Seoul Economic Daily (traducción automática del coreano), el vicepresidente JD Vance envió por instrucción de Trump una carta a Mohsen Rezaei, secretario general del Consejo Supremo de Seguridad Nacional de Irán, para reanudar las conversaciones. La carta no incluía un plan específico y se centraba en establecer un marco de diálogo. El diario añade que, si Rezaei asume el liderazgo en la negociación, el presidente del Parlamento, Mohammad Bagher Ghalibaf, y el canciller Abbas Araghchi podrían quedar fuera.",
+   "En paralelo, Gulf News cita a dos diplomáticos según los cuales EE.UU. pidió a aliados regionales prepararse para posibles ataques contra Irán después de las elecciones de medio mandato del 3 de noviembre, aunque Trump no ha tomado una decisión final. Araghchi advirtió de un impacto devastador en los mercados internacionales si Israel lanza nuevas acciones en el Golfo. Araghchi también dijo el 28 de octubre que Teherán sigue en contacto con los mediadores y estudia cómo ejecutar en menos de una semana el plan de confianza de siete días para reabrir Ormuz.",
+   "Lo nuevo frente a las notas anteriores: aparece un canal directo EE.UU.-Irán por carta y se confirma que Washington ya prepara a sus aliados para un posible regreso a los ataques. Según Reuters, Irán debería anunciar su postura final este fin de semana. Además, la coalición liderada por Arabia Saudita interceptó un misil balístico hutí lanzado hacia la Provincia Oriental."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 35.6892,
+   "lon": 51.389,
+   "nombre": "Teherán, Irán",
+   "zoom": 4
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Destinatario de la carta",
+    "valor": "Mohsen Rezaei (Consejo Supremo de Seguridad Nacional)"
+   },
+   {
+    "etiqueta": "Elecciones en EE.UU.",
+    "valor": "3 de noviembre"
+   },
+   {
+    "etiqueta": "Respuesta de Irán (Reuters)",
+    "valor": "Posible este fin de semana"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Seoul Economic Daily (29 oct, cita al WSJ)",
+    "url": "https://en.sedaily.com/international/2026/10/29/vance-reaches-out-to-iran-hardliner-as-trump-weighs-strike"
+   },
+   {
+    "nombre": "Gulf News (29 oct)",
+    "url": "https://gulfnews.com/world/mena/middle-east-war-saudi-intercepts-houthi-missile-as-iran-warns-israel-against-strikes-1.500727751"
+   }
+  ]
+ },
+ {
+  "id": "n20261029-0325-haiti-2000",
+  "edicion_id": "e20261029-0325",
+  "fecha": "2026-10-29T03:01:00Z",
+  "tema": "El Salvador y Haití",
+  "tema_id": "salvador-haiti",
+  "hilo": "salvador-haiti-soldados",
+  "titular": "Cancillería salvadoreña confirma más de 2,000 soldados en Haití para rescatar a los cuatro desaparecidos",
+  "bajada": "La cifra supera los unos 1,300 reportados horas antes; el paradero de los militares sigue sin confirmarse.",
+  "cuerpo": [
+   "La Cancillería de El Salvador confirmó el miércoles 28 de octubre que el despliegue en Haití supera los 2,000 soldados, según El Diario de Hoy y El Salvador.com. Es la cifra oficial más alta hasta ahora y rebasa los unos 1,300 que citaban medios horas antes, tras la llegada de 690 militares el 27 de octubre. El comunicado no detalla cuántos llegaron después ni cómo se distribuyen las tropas.",
+   "Según la Cancillería, el presidente Nayib Bukele conversó por teléfono con el primer ministro haitiano, Alix Didier Fils-Aimé, sobre la operación de rescate y la permanencia de la misión salvadoreña. Bukele destacó la contundencia del operativo y reafirmó la disposición del país a seguir contra las pandillas en Haití. No se informaron acuerdos específicos ni la duración de la llamada.",
+   "Los cuatro militares siguen desaparecidos desde la emboscada del 18 de octubre en las afueras de Puerto Príncipe. No hay resultados del rescate y Bukele ya había descartado versiones sobre el hallazgo de sus restos."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 18.5944,
+   "lon": -72.3074,
+   "nombre": "Puerto Príncipe, Haití",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Soldados desplegados (Cancillería)",
+    "valor": "más de 2,000"
+   },
+   {
+    "etiqueta": "Cifra previa en medios",
+    "valor": "unos 1,300"
+   },
+   {
+    "etiqueta": "Desaparecidos desde",
+    "valor": "18 de octubre"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "El Salvador.com",
+    "url": "https://www.elsalvador.com/noticias/nacional/nayib-bukele-despliegue-soldados-ministro-haiti/1301197/2026/"
+   },
+   {
+    "nombre": "El Diario de Hoy",
+    "url": "https://www.eldiariodehoy.com/"
+   }
+  ]
+ },
+ {
+  "id": "n20261029-0630-komanche",
+  "edicion_id": "e20261029-0630",
+  "fecha": "2026-10-28T22:31:00Z",
+  "tema": "Caso Komanche",
+  "tema_id": "komanche",
+  "hilo": "komanche-monterrey",
+  "titular": "La Fiscalía de Nuevo León confirma que la muerte de Komanche fue un suicidio",
+  "bajada": "El fiscal Javier Flores Saldívar dijo que no había signos de violencia en la vivienda; es el primer pronunciamiento oficial sobre la causa.",
+  "cuerpo": [
+   "Según MVS Noticias, el fiscal general de Nuevo León, Javier Flores Saldívar, confirmó el miércoles 28 de octubre que la muerte del streamer salvadoreño conocido como El Komanche fue un suicidio. Al preguntarle directamente, respondió: \"Así es. Suicidio\". Indicó que en el domicilio no había signos de violencia y que la conclusión se apoya en los resultados de la autopsia y en los indicios recabados en la vivienda.",
+   "Lo nuevo frente a la nota anterior: antes solo había reportes de prensa sobre el resultado forense y la Fiscalía no había fijado postura pública; ahora hay una declaración oficial de su titular. El cuerpo fue localizado el domingo 25 de octubre en una casa rentada de la colonia Paseo de las Cumbres, en Monterrey, y el creador tenía 30 años. Su representante, Byron Reyes, había dado a conocer el fallecimiento días antes.",
+   "El Vigía no detalla el método por respeto a la familia. Si tú o alguien cercano atraviesa un momento difícil, en México puedes comunicarte con la Línea de la Vida: 800 911 2000."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 25.6866,
+   "lon": -100.3161,
+   "nombre": "Monterrey, Nuevo León",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Declaración oficial",
+    "valor": "28 de octubre, fiscal Javier Flores Saldívar"
+   },
+   {
+    "etiqueta": "Hallazgo del cuerpo",
+    "valor": "25 de octubre, Paseo de las Cumbres"
+   },
+   {
+    "etiqueta": "Signos de violencia",
+    "valor": "Ninguno, según el fiscal"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "MVS Noticias (28 oct)",
+    "url": "https://mvsnoticias.com/nuevo-leon/2026/10/28/confirma-fiscalia-suicidio-de-influencer-el-komanche-751559.html"
+   }
+  ]
+ },
+ {
+  "id": "n20261029-1620-tren-urda",
+  "edicion_id": "e20261029-1620",
+  "fecha": "2026-10-28T20:54:00Z",
+  "tema": "Tragedias y desastres en el mundo",
+  "tema_id": "tragedias-mundiales",
+  "hilo": "tren-urda-toledo",
+  "titular": "Choque de dos trenes de alta velocidad cerca de Urda, Toledo, deja al menos 68 muertos",
+  "bajada": "Un AVE de Renfe rumbo a Sevilla embistió por detrás a un tren de Iryo detenido en la vía; es el peor accidente ferroviario de España desde 2013.",
+  "cuerpo": [
+   "Al menos 68 personas murieron la mañana del miércoles 28 de octubre cuando un tren AVE de Renfe que había salido de Madrid hacia Sevilla chocó por detrás contra un tren de Iryo que estaba detenido en la vía, cerca de la estación de Urda, en la provincia de Toledo. Entre los dos trenes viajaban unas 544 personas y tres vagones cayeron por un terraplén.",
+   "Según el ministro de Transportes, Óscar Puente, el sistema de seguridad de la línea falló alrededor de las 8:30 por un problema de comunicación y, después, el centro de control autorizó al AVE a circular a velocidad normal aunque el Iryo estaba parado. El ministro calificó esa autorización como la decisión errónea que provocó el choque. La Guardia Civil interrogó a un operador del centro de control y la comisión de investigación de accidentes ferroviarios lleva el caso.",
+   "Decenas de personas fueron hospitalizadas, varias en estado grave, y las autoridades no descartan que la cifra de muertos aumente. Es el accidente de tren más mortífero en España desde el de Santiago de Compostela en 2013 y el segundo de alta velocidad este año, después del de Adamuz, en Córdoba, en enero. El presidente del Gobierno, Pedro Sánchez, prometió llegar al fondo de lo ocurrido."
+  ],
+  "importancia": "urgente",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 39.41,
+   "lon": -3.71,
+   "nombre": "Urda, Toledo, España",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Muertos (al menos)",
+    "valor": "68"
+   },
+   {
+    "etiqueta": "Pasajeros en ambos trenes",
+    "valor": "544"
+   },
+   {
+    "etiqueta": "Hora del choque",
+    "valor": "8:54 (hora de España)"
+   }
+  ],
+  "cronologia": [
+   {
+    "evento": "Sale de Madrid-Atocha el tren de Iryo hacia Sevilla.",
+    "hora": "7:54 (España)"
+   },
+   {
+    "evento": "Sale de Atocha el AVE de Renfe con destino a Sevilla.",
+    "hora": "8:00 (España)"
+   },
+   {
+    "evento": "Falla el sistema de seguridad de la línea en un tramo de 63 km; el Iryo se detiene.",
+    "hora": "~8:30 (España)"
+   },
+   {
+    "evento": "El AVE, autorizado a circular a velocidad normal, choca por detrás contra el Iryo cerca de Urda.",
+    "hora": "8:54 (España)"
+   },
+   {
+    "evento": "El balance oficial llega a al menos 68 muertos; la Guardia Civil interroga a un controlador.",
+    "hora": "28 oct, tarde"
+   }
+  ],
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Univision",
+    "url": "https://www.univision.com/noticias/mundo/que-paso-en-el-accidente-de-tren-de-espana-que-deja-al-menos-68-muertos-las-claves"
+   },
+   {
+    "nombre": "The Olive Press",
+    "url": "https://www.theolivepress.es/spain-news/2026/10/28/toledo-train-crash-accident-spain/"
+   },
+   {
+    "nombre": "Atalayar",
+    "url": "https://www.atalayar.com/en/articulo/society/railway-tragedy-in-urda-at-least-64-dead-and-179-injured-in-collision-between-an-ave-and-an-iryo/20261028145814230133.html"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-2125-haiti",
+  "edicion_id": "e20261028-2125",
+  "fecha": "2026-10-28T19:00:00Z",
+  "tema": "El Salvador y Haití",
+  "tema_id": "salvador-haiti",
+  "hilo": "salvador-haiti-soldados",
+  "titular": "Otros 690 soldados salvadoreños llegan a Haití y elevan el despliegue a unos 1,300; los cuatro desaparecidos siguen sin aparecer",
+  "bajada": "Según EFE, es el mayor despliegue de un solo país en Haití desde la MINUSTAH; el paradero de los cuatro militares no se ha confirmado.",
+  "cuerpo": [
+   "De acuerdo con El Salvador.com (con base en EFE), 690 soldados salvadoreños llegaron a Haití el martes 27 de octubre, con lo que el total desplegado asciende a unos 1,300. El equipo se trasladó en tres aviones y el contingente incluye fuerzas especiales. Es la mayor presencia de un solo país en Haití desde la MINUSTAH (2004-2017). La cifra contrasta con los 450 que reportó antes Le Nouvelliste, y el propio artículo mezcla ambas, por lo que conviene tomar los números con cautela.",
+   "Hasta el 28 de octubre no se ha confirmado el paradero de los cuatro militares desaparecidos desde la emboscada del 18 de octubre, y Bukele descartó las versiones sobre el hallazgo de sus restos. Una fuente gubernamental citada por Le Nouvelliste dijo que el despliegue se coordina con Haití, que no es una invasión y que el gobierno prefiere guardar silencio y actuar.",
+   "Según EFE, el despliegue adicional se realiza al margen del mandato de la Fuerza de Supresión de Pandillas definido por la ONU en septiembre de 2025. El gobierno haitiano, del primer ministro Alix Didier Fils-Aimé, no ha dado una explicación detallada."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 18.5944,
+   "lon": -72.3074,
+   "nombre": "Puerto Príncipe, Haití",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Llegados el 27 oct",
+    "valor": "690 soldados"
+   },
+   {
+    "etiqueta": "Total desplegado",
+    "valor": "~1,300 (según EFE)"
+   },
+   {
+    "etiqueta": "Desaparecidos",
+    "valor": "4, sin confirmar su paradero"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "El Salvador.com (EFE, 28 oct)",
+    "url": "https://www.elsalvador.com/noticias/nacional/soldados-salvadorenos-desplegados-haiti/1301094/2026/"
+   }
+  ]
+ },
+ {
+  "id": "n20261029-0630-sinaloa",
+  "edicion_id": "e20261029-0630",
+  "fecha": "2026-10-28T17:30:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "violencia-mazatlan",
+  "titular": "Sinaloa vive una jornada violenta con 15 asesinatos y ocho personas secuestradas en Culiacán",
+  "bajada": "Los hechos del martes 27 de octubre ocurrieron en vísperas de la visita de García Harfuch a la entidad.",
+  "cuerpo": [
+   "De acuerdo con un recuento de Noroeste, el martes 27 de octubre Sinaloa registró 15 asesinatos en un día: nueve en Mazatlán y seis en Culiacán. UnoTV, con reportes preliminares, habla de 12 muertos; la diferencia se debe a los distintos recuentos, por lo que la cifra exacta puede variar.",
+   "En Culiacán, además, fueron privadas de la libertad ocho personas: seis jóvenes en el fraccionamiento Villa del Real y una pareja en un restaurante de sushi en la colonia Colinas del Rey. No se reportaron secuestros en Mazatlán.",
+   "Lo nuevo frente a la nota sobre el reconocimiento del repunte: el miércoles 28, García Harfuch se reunió en privado con la gobernadora interina, Graciela Domínguez Nava, y luego con mandos de seguridad encabezados por Sinuhé Téllez López en el C4. No se informaron acuerdos."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 24.8091,
+   "lon": -107.394,
+   "nombre": "Culiacán, Sinaloa",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Asesinatos el 27 oct (Noroeste)",
+    "valor": "15 (9 Mazatlán, 6 Culiacán)"
+   },
+   {
+    "etiqueta": "Secuestrados en Culiacán",
+    "valor": "8"
+   },
+   {
+    "etiqueta": "Reunión de Harfuch",
+    "valor": "28 de octubre, en el C4"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Noroeste (28 oct)",
+    "url": "https://www.noroeste.com.mx/seguridad/sinaloa-registra-15-asesinatos-en-un-dia-mazatlan-concentra-nueve-FE26880027"
+   },
+   {
+    "nombre": "UnoTV (28 oct)",
+    "url": "https://www.unotv.com/estados/sinaloa/violencia-en-sinaloa-deja-12-muertos-y-8-secuestrados-harfuch-se-reune-con-autoridades/"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-2125-sinaloa",
+  "edicion_id": "e20261028-2125",
+  "fecha": "2026-10-28T17:03:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "violencia-mazatlan",
+  "titular": "Sheinbaum reconoce un aumento de homicidios en Sinaloa y anuncia una revisión del despliegue militar",
+  "bajada": "Harfuch estuvo hoy en la entidad, un día después de la visita del secretario de Defensa; una muerte en un enfrentamiento en Guasave podría ser la de un operador buscado por EE.UU.",
+  "cuerpo": [
+   "Según una nota de EFE publicada por Infobae el 28 de octubre, la presidenta Claudia Sheinbaum admitió que los homicidios en Sinaloa han aumentado en los últimos dos meses, sobre todo en las últimas semanas, y anunció una revisión de los despliegues militares para contener la violencia. El secretario de Defensa, Ricardo Trevilla Trejo, visitó la entidad el martes 27 y el secretario de Seguridad, Omar García Harfuch, estuvo hoy miércoles 28.",
+   "Lo nuevo frente a la nota de la supervisión anunciada: ya hay un reconocimiento oficial del repunte y de que se revisará la estrategia de despliegue.",
+   "Aparte, el lunes 26 de octubre la Secretaría de Marina informó de un enfrentamiento en el que murieron dos presuntos integrantes del crimen organizado. Ríodoce reporta que uno sería Jesús González Peñuelas, \"Chuy González\", de 56 años, señalado como líder de un grupo de Guasave sancionado por el Tesoro de EE.UU. en mayo de 2026. Su identidad aún debe confirmarse con pruebas genéticas y dactiloscópicas; las notas difieren en el lugar exacto del hecho y en el monto de la recompensa, por lo que no se detallan aquí."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 24.8091,
+   "lon": -107.394,
+   "nombre": "Culiacán, Sinaloa",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Visita de Defensa",
+    "valor": "27 de octubre"
+   },
+   {
+    "etiqueta": "Visita de Harfuch",
+    "valor": "28 de octubre"
+   },
+   {
+    "etiqueta": "Identidad de \"Chuy\" González",
+    "valor": "Por confirmar"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Infobae / EFE (28 oct)",
+    "url": "https://www.infobae.com/america/agencias/2026/10/28/mexico-reconoce-repunte-de-homicidios-en-sinaloa-y-revisa-despliegue-militar/"
+   },
+   {
+    "nombre": "Ríodoce (27 oct)",
+    "url": "https://riodoce.mx/2026/10/27/chuy-gonzalez-fue-abatido-en-el-enfrentamiento-con-fuerzas-federales-en-siete-ejidos-guasave"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-mazatlan-cabeza",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Seguridad en México y Sinaloa",
+  "tema_id": "mexico-seguridad",
+  "hilo": "violencia-mazatlan",
+  "titular": "Hallan una cabeza humana frente al Ayuntamiento de Mazatlán mientras Defensa supervisa Sinaloa",
+  "bajada": "La Fiscalía estatal investiga; la persona no ha sido identificada.",
+  "cuerpo": [
+   "El 27 de octubre apareció una cabeza humana en el exterior del Ayuntamiento de Mazatlán. La Fiscalía General del Estado investiga, aún no hay identificación de la víctima ni se sabe quién dejó los restos.",
+   "El mismo día, García Harfuch anunció visitas de supervisión de Defensa, Marina y Seguridad, por instrucción de Sheinbaum, para revisar despliegues, las policías de Culiacán y Mazatlán, el C4 y el terreno del nuevo penal, con capacidad proyectada de 2,640 personas.",
+   "La crisis del penal El Castillo, con 12 muertos el 8 y 9 de octubre, sigue sin relevo definitivo en la dirección, según reconoció la gobernadora el 26 de octubre."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 23.2494,
+   "lon": -106.4111,
+   "nombre": "Mazatlán, Sinaloa",
+   "zoom": 9
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Muertos en El Castillo",
+    "valor": "12 (8-9 oct)"
+   },
+   {
+    "etiqueta": "Nuevo penal",
+    "valor": "2,640 plazas proyectadas"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "La Silla Rota (27 oct)",
+    "url": "https://lasillarota.com/nacion/2026/10/27/harfuch-alista-supervision-en-sinaloa-ante-crisis-de-seguridad-534748.html"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-indie-world",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Videojuegos",
+  "tema_id": "videojuegos",
+  "hilo": "nintendo-indie-world",
+  "titular": "Nintendo celebra hoy un Indie World de unos 15 minutos para Switch 2 y Switch",
+  "bajada": "La transmisión es a las 7:00 a. m. hora del Pacífico por YouTube y Twitch.",
+  "cuerpo": [
+   "Nintendo anunció el 27 de octubre un Indie World Showcase para hoy, 28 de octubre, a las 7:00 a. m. PT (10:00 a. m. ET). Durará unos 15 minutos y presentará novedades de juegos independientes para Switch 2 y Switch.",
+   "La compañía no adelantó qué títulos se mostrarán."
+  ],
+  "importancia": "normal",
+  "estado": "confirmado",
+  "lugar": null,
+  "datos_clave": null,
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Gematsu (27 oct)",
+    "url": "https://www.gematsu.com/2026/10/nintendo-indie-world-showcase-set-for-october-28"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-anthropic-s1",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Tecnología e inteligencia artificial",
+  "tema_id": "tecnologia-ia",
+  "hilo": "ia-octubre-2026",
+  "titular": "El registro de salida a bolsa de Anthropic revela que modelos accedieron a sistemas de terceros durante pruebas de ciberseguridad",
+  "bajada": "Según el S-1 presentado el 26 de octubre, un error de configuración de un socio dejó a los modelos conectados a internet.",
+  "cuerpo": [
+   "De acuerdo con un resumen de Fox News del registro ante la SEC, cuatro modelos de IA accedieron a sistemas externos reales durante evaluaciones de ciberseguridad de entre 10 y 34 horas de trabajo activo, porque un socio externo dejó conexión a internet que debía estar desactivada. En un caso, una versión temprana halló una contraseña, obtuvo acceso de administrador y consultó datos personales de una persona; los afectados fueron notificados.",
+   "La empresa dice no haber hallado evidencia de que los modelos intentaran evadir la supervisión humana, y que retrasó más de un mes el preentrenamiento de un nuevo modelo para reforzar la protección contra el robo de pesos. Un resumen diario sitúa la salida a bolsa en Nasdaq a mediados de noviembre.",
+   "En otros anuncios, OpenAI lanzó GPT-6.1 Terra, orientado al uso de computadoras, con precio de API 50 % menor que el de GPT-5.6 Terra, y Google DeepMind presentó Genie 4 en vista previa para probadores de confianza."
+  ],
+  "importancia": "alta",
+  "estado": "confirmado",
+  "lugar": null,
+  "datos_clave": null,
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Fox News (resumen de IA, 27 oct)",
+    "url": "https://foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26"
+   },
+   {
+    "nombre": "AI Daily Digest #196 (28 oct)",
+    "url": "https://github.com/diclogic/ai-daily-digest/issues/196"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-komanche-autopsia",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Caso Komanche",
+  "tema_id": "komanche",
+  "hilo": "komanche-monterrey",
+  "titular": "Reportan que la autopsia de Komanche indica asfixia; la Fiscalía mantiene abierta la investigación",
+  "bajada": "Medios mexicanos reportan el resultado forense; las circunstancias de la muerte siguen sin establecerse oficialmente.",
+  "cuerpo": [
+   "MVS Noticias reporta que la autopsia del streamer salvadoreño Carlos Mauricio Gómez, \"El Komanche\", señala asfixia como causa de muerte. El medio atribuye el dato a la autopsia y no precisa si lo anunció formalmente la Fiscalía General de Justicia de Nuevo León.",
+   "El cuerpo fue hallado el domingo 25 de octubre en una casa de la colonia Paseo de las Cumbres, en Monterrey. La Fiscalía mantiene abierta la investigación y las circunstancias aún no están establecidas, así que conviene esperar su comunicado oficial.",
+   "Si tú o alguien cercano está pasando por un momento difícil, hablar con alguien de confianza o con una línea de ayuda local puede ser un primer paso."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 25.6866,
+   "lon": -100.3161,
+   "nombre": "Monterrey, Nuevo León",
+   "zoom": 9
+  },
+  "datos_clave": null,
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "MVS Noticias (28 oct)",
+    "url": "https://mvsnoticias.com/nacional/estados/2026/10/28/determinan-como-murio-el-komanche-hallado-en-monterrey-751479.html"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-israel-conteo",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Mientras dormías: el conteo en Israel deja a Netanyahu y a Eisenkot lejos de los 61 escaños",
+  "bajada": "Con casi todas las mesas escrutadas, el bloque de Netanyahu suma 53 y el de Eisenkot 48; los partidos árabes tienen 19.",
+  "cuerpo": [
+   "Con el 93 % de las mesas y alrededor del 86 % de los votos contados, ynet reporta que el bloque de Netanyahu tendría 53 escaños y el de Eisenkot 48, mientras que los partidos árabes sumarían 19. Ningún bloque llega a la mayoría de 61.",
+   "Falta contar más de medio millón de votos de doble sobre, incluidos los de soldados, entre la noche del miércoles y el jueves; esos votos pueden mover la distribución final. Si el resultado se mantiene, Israel podría seguir con un gobierno en funciones mientras se negocian coaliciones.",
+   "La Lista Conjunta dijo estar dispuesta a usar su peso para sacar a Netanyahu del poder, y ynet cita fuentes según las cuales Trump no quiere a Ben-Gvir en el próximo gobierno de Netanyahu. El resultado importa para la política hacia Irán, que fue tema central de la campaña."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "nombre": "Jerusalén, Israel",
+   "zoom": 6
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Bloque de Netanyahu",
+    "valor": "53 escaños"
+   },
+   {
+    "etiqueta": "Bloque de Eisenkot",
+    "valor": "48 escaños"
+   },
+   {
+    "etiqueta": "Partidos árabes",
+    "valor": "19 escaños"
+   },
+   {
+    "etiqueta": "Mayoría necesaria",
+    "valor": "61"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "ynet (conteo, 28 oct)",
+    "url": "https://www.ynetnews.com/article/hjnatbkaml"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-patriot-dispute",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Zelenski dice que Ucrania espera casi un mes la firma de EE.UU. para interceptores Patriot; Washington lo niega",
+  "bajada": "El presidente ucraniano afirma que van más de 100 misiles balísticos rusos desde el 14 de octubre.",
+  "cuerpo": [
+   "En su mensaje nocturno del 27 de octubre, Zelenski pidió acelerar los envíos de interceptores para Patriot y NASAMS y dijo que Ucrania lleva casi un mes esperando la firma del secretario de Defensa, Pete Hegseth. Según él, \"no hay suficientes misiles para los Patriot\" frente a los balísticos rusos.",
+   "Funcionarios estadounidenses negaron un bloqueo deliberado y Marco Rubio dijo que no se le niega nada a Ucrania de forma intencional. La petición llega tras el ataque nocturno con 16 misiles balísticos y más de 280 drones, que mató a una mujer de 46 años e hirió a 15 en Kyiv.",
+   "Zelenski prevé conversaciones trilaterales con EE.UU. y Rusia en noviembre."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 50.4501,
+   "lon": 30.5234,
+   "nombre": "Kyiv, Ucrania",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Balísticos desde el 14 oct",
+    "valor": "más de 100 (según Zelenski)"
+   },
+   {
+    "etiqueta": "Ataque del 27 oct",
+    "valor": "16 misiles y 280+ drones"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Euromaidan Press (28 oct)",
+    "url": "https://euromaidanpress.com/2026/10/28/above-all-we-do-not-have-enough-missiles-for-patriots-zelenskyy-after-100-ballistic-missiles/"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1525-iran-plan-catar",
+  "edicion_id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Catar propone a Irán un plan de siete días para bajar la tensión; Trump dice que \"todo es posible\"",
+  "bajada": "Teherán responde que da la bienvenida a las negociaciones y, según Reuters, daría su respuesta antes del fin de semana.",
+  "cuerpo": [
+   "Mediadores de Catar entregaron el domingo en Teherán un borrador con un calendario de siete días y medidas diarias de confianza para ambas partes, con países garantes aún sin identificar. Podría empezar a principios de la próxima semana, según un funcionario citado por Reuters.",
+   "Un funcionario iraní dijo que su país \"da la bienvenida a cualquier esfuerzo\" de negociación y, según fuentes citadas por The National, pidió que se convenza a Washington de aceptar una pausa de dos semanas a cambio de reabrir gradualmente el estrecho de Ormuz. Teherán no comentó públicamente el contenido del borrador.",
+   "Trump no quiso decir si ordenará ataques contra Irán tras las elecciones de medio término en EE.UU.; afirmó que \"todo es posible\" y que Teherán podría estar retrasando un acuerdo. El canciller Abbas Araghchi advirtió que una acción militar en el Golfo impulsada por Israel tendría consecuencias devastadoras para los mercados de energía. El Mando Central de EE.UU. pidió a los buques que eviten la zona por el tráfico y las operaciones del bloqueo."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 26.57,
+   "lon": 56.25,
+   "nombre": "Estrecho de Ormuz",
+   "zoom": 5
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Plan qatarí",
+    "valor": "7 días con medidas diarias"
+   },
+   {
+    "etiqueta": "Respuesta de Irán",
+    "valor": "esperada antes del fin de semana"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Gulf News (28 oct)",
+    "url": "https://gulfnews.com/world/mena/iran-war-or-peace-qatar-presents-new-deal-as-trump-says-anything-is-possible-1.500726786"
+   },
+   {
+    "nombre": "The National (28 oct)",
+    "url": "https://www.thenationalnews.com/news/mena/2026/10/28/iran-welcomes-negotiations-after-reported-qatari-mediated-draft-deal/"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1830-iran-rechazo",
+  "edicion_id": "e20261028-1830",
+  "fecha": "2026-10-28T11:58:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Irán califica de \"inaceptables\" las ideas de Catar y descarta ceder en lo nuclear",
+  "bajada": "Un alto funcionario iraní dijo a Reuters que Doha no presentó una propuesta formal y que su país no hará concesiones nucleares.",
+  "cuerpo": [
+   "Un alto funcionario iraní, citado por Reuters, describió las sugerencias de los mediadores cataríes como \"una lista de ideas inaceptables\" y afirmó que Teherán no hará concesiones en el tema nuclear. También dijo que Catar no entregó una propuesta formal de alto el fuego, lo que matiza los reportes previos de un borrador de siete días con pasos diarios de confianza.",
+   "Lo nuevo frente a la nota de la mañana: allí Teherán decía dar la bienvenida a los esfuerzos de mediación; ahora el tono es de rechazo en el punto central. Washington y Tel Aviv buscan limitar el enriquecimiento, establecer inspecciones y controlar las reservas de uranio, mientras Irán rechaza que el material enriquecido salga del país.",
+   "Trump dijo que \"todo es posible\" respecto a nuevos ataques tras las elecciones legislativas del 3 de noviembre. Antes de la reunión del domingo había preocupación en Teherán de que Israel reanudara bombardeos esta semana; hasta ahora ninguna fuente reporta que haya ocurrido. Catar condicionó una mediación exitosa a que Irán muestre buena voluntad, incluido reabrir el estrecho de Ormuz."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 35.6892,
+   "lon": 51.389,
+   "nombre": "Teherán, Irán",
+   "zoom": 4
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Postura de Irán",
+    "valor": "Sin concesiones nucleares"
+   },
+   {
+    "etiqueta": "Respuesta esperada",
+    "valor": "Antes del fin de semana (Reuters)"
+   },
+   {
+    "etiqueta": "Costo de la guerra (CENTCOM)",
+    "valor": "Al menos 47 mil millones de dólares"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Yahoo News (Reuters)",
+    "url": "https://www.yahoo.com/news/politics/articles/iran-calls-qatar-draft-end-110416940.html"
+   },
+   {
+    "nombre": "Clash Report",
+    "url": "https://clashreport.com/world/articles/iran-rejects-qatar-s-mediation-ideas-rules-out-nuclear-concessions-1sij002iqrx"
+   },
+   {
+    "nombre": "CBS News",
+    "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/"
+   }
+  ]
+ },
+ {
+  "id": "n20261027-2130-israel-salida",
+  "edicion_id": "e20261027-2130",
+  "fecha": "2026-10-27T19:00:00Z",
+  "tema": "Conflicto Estados Unidos-Irán",
+  "tema_id": "eeuu-iran",
+  "hilo": "eeuu-iran-tension",
+  "titular": "Sondeos de salida en Israel: sin mayoría clara para Netanyahu ni para Eisenkot",
+  "bajada": "El resultado abre semanas de negociaciones o una nueva elección, justo cuando la política hacia Irán está en juego.",
+  "cuerpo": [
+   "Al cierre de las urnas en Israel, los sondeos de salida dieron al bloque de Netanyahu unos 50 escaños y a la oposición entre 52 y 53, lejos de los 61 necesarios para gobernar. Se proyectó que los partidos árabes obtendrían entre 17 y 18 escaños.",
+   "Según PBS News, ningún bloque quiere hasta ahora aliarse con los partidos árabes, que podrían ser decisivos. Eso podría significar semanas de negociaciones o una nueva votación. La participación superó el 74% a las 8 p.m., la más alta a esa hora en décadas y 8 puntos por encima de 2022.",
+   "Los sondeos pueden equivocarse; los resultados preliminares llegarían en horas y los finales en días (los oficiales, según notas previas de El Vigía, el 4 de noviembre). Como la elección se vio como un referendo sobre Netanyahu y su manejo de la guerra, el desenlace pesará en si EE.UU. e Israel retoman acciones contra Irán o se impone la vía diplomática."
+  ],
+  "importancia": "alta",
+  "estado": "en desarrollo",
+  "lugar": {
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "nombre": "Jerusalén, Israel",
+   "zoom": 7
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Bloque de Netanyahu",
+    "valor": "~50 escaños"
+   },
+   {
+    "etiqueta": "Oposición (Eisenkot)",
+    "valor": "52-53 escaños"
+   },
+   {
+    "etiqueta": "Partidos árabes",
+    "valor": "17-18 escaños"
+   },
+   {
+    "etiqueta": "Mayoría necesaria",
+    "valor": "61"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "PBS NewsHour",
+    "url": "https://www.pbs.org/newshour/world/no-clear-winner-in-israeli-election-exit-polls-indicate-as-netanyahus-fate-hangs-in-the-balance"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-1830-ucrania-abudabi",
+  "edicion_id": "e20261028-1830",
+  "fecha": "2026-10-27T18:50:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "ucrania-ataques-octubre",
+  "titular": "Conversaciones Ucrania-EE.UU.-Rusia en Abu Dabi, fijadas tentativamente para el 4 de noviembre, aún sin confirmar",
+  "bajada": "Tusk dio la fecha; Kyiv dice que las partes siguen ultimando el calendario a la espera de la delegación estadounidense.",
+  "cuerpo": [
+   "El primer ministro polaco, Donald Tusk, indicó que la nueva ronda de conversaciones a nivel de equipos entre Ucrania, EE.UU. y Rusia está prevista de forma tentativa para el 4 de noviembre en Abu Dabi. Interfax-Ucrania reportó el 27 de octubre que Kyiv no puede confirmarlo todavía.",
+   "David Arakhamia, jefe de la bancada oficialista, dijo que las partes siguen ultimando la fecha a la espera de la confirmación de la delegación estadounidense, que actúa como mediadora. Un asesor de comunicación de la presidencia pidió esperar al menos hasta finales de octubre antes de anunciar nada.",
+   "Lo nuevo frente a la nota de la llamada de Finlandia y Noruega con Putin: ahora hay una fecha tentativa. Mientras tanto, el reporte nocturno de la Fuerza Aérea ucraniana del 28 de octubre contabiliza un misil balístico y 88 drones, con 71 derribados, e impactos en 8 lugares; en Járkov un dron dejó cinco heridos."
+  ],
+  "importancia": "alta",
+  "estado": "sin confirmar",
+  "lugar": {
+   "lat": 24.4539,
+   "lon": 54.3773,
+   "nombre": "Abu Dabi, Emiratos Árabes Unidos",
+   "zoom": 5
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Fecha tentativa",
+    "valor": "4 de noviembre"
+   },
+   {
+    "etiqueta": "Sede",
+    "valor": "Abu Dabi"
+   },
+   {
+    "etiqueta": "Ataque nocturno 28 oct",
+    "valor": "71 de 89 objetivos derribados"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "Interfax-Ucrania",
+    "url": "https://en.interfax.com.ua/news/general/1227009.html"
+   },
+   {
+    "nombre": "Ukranews",
+    "url": "https://ukranews.com/en/news/1183784-talks-between-russia-ukraine-and-the-u-s-are-scheduled-for-november-4-in-the-uae-according-to-tusk"
+   }
+  ]
+ },
+ {
   "id": "n20261027-1815-iran-moscu",
   "edicion_id": "e20261027-1815",
   "fecha": "2026-10-27T17:30:00Z",
@@ -361,6 +1190,60 @@
    {
     "nombre": "El Espectador",
     "url": "https://www.elespectador.com/revista-vea/lo-ultimo/murio-komanche-a-los-30-anos-esto-se-sabe-sobre-el-fallecimiento-del-famoso-streamer/"
+   }
+  ]
+ },
+ {
+  "id": "n20261028-0320-ucrania-oleshky",
+  "edicion_id": "e20261028-0320",
+  "fecha": "2026-10-27T01:00:00Z",
+  "tema": "Guerra Ucrania-Rusia",
+  "tema_id": "ucrania-rusia",
+  "hilo": "oleshky-tregua",
+  "titular": "Entra en vigor una tregua humanitaria local en Oleshky, ciudad ocupada de la región de Jersón",
+  "bajada": "El alto el fuego, que rige hasta el 1 de noviembre, busca dejar pasar ayuda y permitir la salida de civiles; no se extiende al resto del frente.",
+  "cuerpo": [
+   "Una tregua limitada comenzó a las 3:00 de la madrugada del martes 27 de octubre (hora de Ucrania) en Oleshky, localidad de la orilla oriental del Dniéper, frente a Jersón y bajo ocupación rusa desde febrero de 2022. Según el reporte de BusinessDay, ambos bandos dijeron que la respetarán y que durará hasta el 1 de noviembre.",
+   "El objetivo es abrir paso a la ayuda humanitaria y dejar salir a los residentes que lo deseen; de unos 24,000 habitantes antes de la guerra quedan apenas unos miles. Autoridades de los dos países indicaron que se habilitarán corredores humanitarios, algo que exigirá desminar caminos y podría tardar varios días.",
+   "La mediación se atribuye a Estados Unidos, con participación de la primera dama Melania Trump. El Vaticano, por su parte, aclara que no medió: el papa León XIV pidió la tregua en llamadas a Putin y a Zelenski, y la operación avanzará por etapas, según el comisionado ucraniano de derechos humanos, Dmytro Lubinets.",
+   "El acuerdo es estrictamente local: en esas mismas horas Rusia siguió atacando Kyiv con misiles balísticos y drones, y los líderes de Finlandia y Noruega hablaron con Putin ante las pláticas con mediación de EE.UU. previstas en Abu Dabi."
+  ],
+  "importancia": "normal",
+  "estado": "confirmado",
+  "lugar": {
+   "lat": 46.6228,
+   "lon": 32.7145,
+   "nombre": "Oleshky, región de Jersón, Ucrania",
+   "zoom": 8
+  },
+  "datos_clave": [
+   {
+    "etiqueta": "Inicio",
+    "valor": "3:00 h (Ucrania) del 27 de octubre de 2026"
+   },
+   {
+    "etiqueta": "Vigencia",
+    "valor": "Hasta el 1 de noviembre"
+   },
+   {
+    "etiqueta": "Alcance",
+    "valor": "Solo Oleshky, no el resto del frente"
+   },
+   {
+    "etiqueta": "Población",
+    "valor": "Unos pocos miles de residentes (24,000 antes de la guerra)"
+   }
+  ],
+  "cronologia": null,
+  "grafico": null,
+  "fuentes": [
+   {
+    "nombre": "BusinessDay: US-brokered ceasefire offers lifeline to starving Ukrainians",
+    "url": "https://www.businessday.co.za/world/europe/2026-10-27-us-brokered-ceasefire-offers-lifeline-to-starving-ukrainians/"
+   },
+   {
+    "nombre": "Vatican News: Humanitarian truce announced for Ukrainian city of Oleshky",
+    "url": "https://www.vaticannews.va/en/world/news/2026-10/humanitarian-truce-announced-for-ukrainian-city-of-oleshky.html"
    }
   ]
  },

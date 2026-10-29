@@ -1,5 +1,68 @@
 [
  {
+  "id": "e20261029-1620",
+  "fecha": "2026-10-29T16:20:00Z",
+  "titular": "Edición especial: choque de trenes de alta velocidad en Toledo, España, deja al menos 68 muertos",
+  "tipo": "manual",
+  "n_noticias": 1
+ },
+ {
+  "id": "e20261029-1555",
+  "fecha": "2026-10-29T15:55:00Z",
+  "titular": "Mientras dormías: un ataque ruso con dron deja al menos 14 muertos en una estación de tren de Dnipró; Washington busca reabrir el diálogo con Irán",
+  "tipo": "mañana",
+  "n_noticias": 2
+ },
+ {
+  "id": "e20261029-0630",
+  "fecha": "2026-10-29T06:30:00Z",
+  "titular": "La Fiscalía de Nuevo León confirma que la muerte de Komanche fue un suicidio; Sinaloa suma una jornada violenta con 15 asesinatos",
+  "tipo": "regular",
+  "n_noticias": 2
+ },
+ {
+  "id": "e20261029-0325",
+  "fecha": "2026-10-29T03:25:00Z",
+  "titular": "El Salvador confirma más de 2,000 soldados en Haití; los cuatro desaparecidos siguen sin aparecer",
+  "tipo": "regular",
+  "n_noticias": 1
+ },
+ {
+  "id": "e20261028-2125",
+  "fecha": "2026-10-28T21:25:00Z",
+  "titular": "Sheinbaum admite repunte de homicidios en Sinaloa; El Salvador eleva a unos 1,300 sus soldados en Haití",
+  "tipo": "regular",
+  "n_noticias": 2
+ },
+ {
+  "id": "e20261028-1830",
+  "fecha": "2026-10-28T18:30:00Z",
+  "titular": "Irán rechaza como \"inaceptables\" las ideas de Catar; fecha tentativa para conversaciones sobre Ucrania",
+  "tipo": "regular",
+  "n_noticias": 2
+ },
+ {
+  "id": "e20261028-1525",
+  "fecha": "2026-10-28T15:25:00Z",
+  "titular": "Mientras dormías: Israel sin mayoría clara, plan qatarí para Irán y autopsia en el caso Komanche",
+  "tipo": "mañana",
+  "n_noticias": 7
+ },
+ {
+  "id": "e20261028-0320",
+  "fecha": "2026-10-28T03:20:00Z",
+  "titular": "Tregua humanitaria en Oleshky: Rusia y Ucrania frenan el fuego en la ciudad ocupada de Jersón hasta el 1 de noviembre",
+  "tipo": "regular",
+  "n_noticias": 1
+ },
+ {
+  "id": "e20261027-2130",
+  "fecha": "2026-10-27T21:30:00Z",
+  "titular": "Sondeos de salida en Israel no dan mayoría clara a Netanyahu ni a Eisenkot",
+  "tipo": "regular",
+  "n_noticias": 1
+ },
+ {
   "id": "e20261027-1815",
   "fecha": "2026-10-27T18:15:00Z",
   "titular": "Harfuch anuncia supervisión federal en Sinaloa; Finlandia y Noruega llaman a Putin antes de las pláticas de Abu Dabi",
